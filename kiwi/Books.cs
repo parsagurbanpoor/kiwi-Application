@@ -16,5 +16,13 @@ namespace kiwi
         {
             InitializeComponent();
         }
+
+        private void btnAddBook_Click(object sender, EventArgs e)
+        {
+            Form_AddEditBook addeditform = new Form_AddEditBook();
+
+
+            addeditform.Show();
+        }
     }
 }

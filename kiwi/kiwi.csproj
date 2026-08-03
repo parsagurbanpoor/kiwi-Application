@@ -71,6 +71,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_AddEditBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddEditBook.Designer.cs">
+      <DependentUpon>Form_AddEditBook.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loans.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -102,6 +108,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_AddEditBook.resx">
+      <DependentUpon>Form_AddEditBook.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Loans.resx">
       <DependentUpon>Loans.cs</DependentUpon>
@@ -151,6 +160,7 @@
     <Content Include="kiwidb.accdb">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\download.png" />
     <None Include="Resources\Gemini_Generated_Image_sugg3lsugg3lsugg.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

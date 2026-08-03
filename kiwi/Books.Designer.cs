@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtSearch = new System.Windows.Forms.TextBox();
             this.lblBooksearch = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnAddBook = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEditBook = new System.Windows.Forms.Button();
             this.btnDeleteBook = new System.Windows.Forms.Button();
+            this.btnEditBook = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             this.panel2.SuspendLayout();
@@ -51,13 +51,6 @@
             this.panel1.Size = new System.Drawing.Size(734, 70);
             this.panel1.TabIndex = 0;
             // 
-            // txtSearch
-            // 
-            this.txtSearch.Location = new System.Drawing.Point(97, 22);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(223, 22);
-            this.txtSearch.TabIndex = 0;
-            // 
             // lblBooksearch
             // 
             this.lblBooksearch.AutoSize = true;
@@ -66,6 +59,13 @@
             this.lblBooksearch.Size = new System.Drawing.Size(91, 17);
             this.lblBooksearch.TabIndex = 1;
             this.lblBooksearch.Text = "Book search:";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Location = new System.Drawing.Point(97, 22);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(223, 22);
+            this.txtSearch.TabIndex = 0;
             // 
             // btnAddBook
             // 
@@ -78,6 +78,7 @@
             this.btnAddBook.TabIndex = 2;
             this.btnAddBook.Text = "New book";
             this.btnAddBook.UseVisualStyleBackColor = false;
+            this.btnAddBook.Click += new System.EventHandler(this.btnAddBook_Click);
             // 
             // dgvBooks
             // 
@@ -104,18 +105,6 @@
             this.panel2.Size = new System.Drawing.Size(734, 60);
             this.panel2.TabIndex = 2;
             // 
-            // btnEditBook
-            // 
-            this.btnEditBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(110)))), ((int)(((byte)(42)))));
-            this.btnEditBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditBook.ForeColor = System.Drawing.Color.White;
-            this.btnEditBook.Location = new System.Drawing.Point(320, 14);
-            this.btnEditBook.Name = "btnEditBook";
-            this.btnEditBook.Size = new System.Drawing.Size(90, 32);
-            this.btnEditBook.TabIndex = 2;
-            this.btnEditBook.Text = "Edit book";
-            this.btnEditBook.UseVisualStyleBackColor = false;
-            // 
             // btnDeleteBook
             // 
             this.btnDeleteBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
@@ -127,6 +116,18 @@
             this.btnDeleteBook.TabIndex = 2;
             this.btnDeleteBook.Text = "Delete book";
             this.btnDeleteBook.UseVisualStyleBackColor = false;
+            // 
+            // btnEditBook
+            // 
+            this.btnEditBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(110)))), ((int)(((byte)(42)))));
+            this.btnEditBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditBook.ForeColor = System.Drawing.Color.White;
+            this.btnEditBook.Location = new System.Drawing.Point(320, 14);
+            this.btnEditBook.Name = "btnEditBook";
+            this.btnEditBook.Size = new System.Drawing.Size(90, 32);
+            this.btnEditBook.TabIndex = 2;
+            this.btnEditBook.Text = "Edit book";
+            this.btnEditBook.UseVisualStyleBackColor = false;
             // 
             // Books
             // 
