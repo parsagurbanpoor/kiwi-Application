@@ -15,3 +15,4 @@ E:\project\kiwi\kiwi\obj\Debug\kiwi.Loans.resources
 E:\project\kiwi\kiwi\obj\Debug\kiwi.Users.resources
 E:\project\kiwi\kiwi\obj\Debug\kiwi.profile.resources
 E:\project\kiwi\kiwi\obj\Debug\kiwi.Form_AddEditBook.resources
+E:\project\kiwi\kiwi\bin\Debug\kiwidb.mdb
