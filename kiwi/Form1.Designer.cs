@@ -118,6 +118,7 @@
             this.btnsignup.TabIndex = 3;
             this.btnsignup.Text = "Submit";
             this.btnsignup.UseVisualStyleBackColor = false;
+            this.btnsignup.Click += new System.EventHandler(this.btnsignup_Click);
             // 
             // checkpassword
             // 

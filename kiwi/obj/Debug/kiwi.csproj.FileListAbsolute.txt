@@ -7,3 +7,4 @@ E:\project\kiwi\kiwi\obj\Debug\kiwi.Properties.Resources.resources
 E:\project\kiwi\kiwi\obj\Debug\kiwi.csproj.GenerateResource.Cache
 E:\project\kiwi\kiwi\obj\Debug\kiwi.exe
 E:\project\kiwi\kiwi\obj\Debug\kiwi.pdb
+E:\project\kiwi\kiwi\obj\Debug\kiwi.Form2.resources

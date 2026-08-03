@@ -33,5 +33,10 @@ namespace kiwi
                 txtboxpassword.PasswordChar = '*';
             }
         }
+
+        private void btnsignup_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
