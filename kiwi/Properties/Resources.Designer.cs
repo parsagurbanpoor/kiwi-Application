@@ -69,5 +69,15 @@ namespace kiwi.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap waves_deep_blue_3840x2160_12119 {
+            get {
+                object obj = ResourceManager.GetObject("waves-deep-blue-3840x2160-12119", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

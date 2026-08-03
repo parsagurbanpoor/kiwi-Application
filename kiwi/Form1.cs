@@ -16,5 +16,22 @@ namespace kiwi
         {
             InitializeComponent();
         }
+
+        private void btnshow_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkpassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkpassword.Checked==true)
+            {
+                txtboxpassword.PasswordChar ='\0';
+            }
+            else
+            {
+                txtboxpassword.PasswordChar = '*';
+            }
+        }
     }
 }
