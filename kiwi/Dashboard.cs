@@ -24,11 +24,9 @@ namespace kiwi
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            // نمایش ساعت زنده
-            lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+            lbltime.Text = DateTime.Now.ToString("hh:mm:ss tt");
 
-            // نمایش تاریخ میلادی/شمسی
-            lblDate.Text = DateTime.Now.ToShortDateString();
+            lbldate.Text = DateTime.Now.ToString("dddd, MMM dd, yyyy");
         }
     }
 }

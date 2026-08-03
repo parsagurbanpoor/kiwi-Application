@@ -31,21 +31,23 @@
             this.components = new System.ComponentModel.Container();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelCard1 = new System.Windows.Forms.Panel();
-            this.lbltitleofcard1 = new System.Windows.Forms.Label();
             this.lblTotalBooks = new System.Windows.Forms.Label();
+            this.lbltitleofcard1 = new System.Windows.Forms.Label();
             this.panelCard2 = new System.Windows.Forms.Panel();
             this.lblActiveLoans = new System.Windows.Forms.Label();
             this.lbltitleofcard2 = new System.Windows.Forms.Label();
             this.panelCard3 = new System.Windows.Forms.Panel();
             this.lblDelayedLoans = new System.Windows.Forms.Label();
             this.lbltitleofcard3 = new System.Windows.Forms.Label();
-            this.lblTime = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lbltime = new System.Windows.Forms.Label();
+            this.lbldate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelCard1.SuspendLayout();
             this.panelCard2.SuspendLayout();
             this.panelCard3.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -68,16 +70,6 @@
             this.panelCard1.Size = new System.Drawing.Size(166, 144);
             this.panelCard1.TabIndex = 1;
             // 
-            // lbltitleofcard1
-            // 
-            this.lbltitleofcard1.AutoSize = true;
-            this.lbltitleofcard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbltitleofcard1.Location = new System.Drawing.Point(8, 14);
-            this.lbltitleofcard1.Name = "lbltitleofcard1";
-            this.lbltitleofcard1.Size = new System.Drawing.Size(150, 17);
-            this.lbltitleofcard1.TabIndex = 0;
-            this.lbltitleofcard1.Text = "Total number of books";
-            // 
             // lblTotalBooks
             // 
             this.lblTotalBooks.AutoSize = true;
@@ -88,6 +80,16 @@
             this.lblTotalBooks.Size = new System.Drawing.Size(28, 33);
             this.lblTotalBooks.TabIndex = 0;
             this.lblTotalBooks.Text = "0";
+            // 
+            // lbltitleofcard1
+            // 
+            this.lbltitleofcard1.AutoSize = true;
+            this.lbltitleofcard1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lbltitleofcard1.Location = new System.Drawing.Point(8, 14);
+            this.lbltitleofcard1.Name = "lbltitleofcard1";
+            this.lbltitleofcard1.Size = new System.Drawing.Size(150, 17);
+            this.lbltitleofcard1.TabIndex = 0;
+            this.lbltitleofcard1.Text = "Total number of books";
             // 
             // panelCard2
             // 
@@ -151,23 +153,37 @@
             this.lbltitleofcard3.TabIndex = 0;
             this.lbltitleofcard3.Text = "Total number of books";
             // 
-            // lblTime
+            // panel1
             // 
-            this.lblTime.AutoSize = true;
-            this.lblTime.Location = new System.Drawing.Point(241, 201);
-            this.lblTime.Name = "lblTime";
-            this.lblTime.Size = new System.Drawing.Size(64, 17);
-            this.lblTime.TabIndex = 1;
-            this.lblTime.Text = "12:00:00";
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panel1.Controls.Add(this.lbldate);
+            this.panel1.Controls.Add(this.lbltime);
+            this.panel1.Location = new System.Drawing.Point(143, 171);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(451, 90);
+            this.panel1.TabIndex = 4;
             // 
-            // lblDate
+            // lbltime
             // 
-            this.lblDate.AutoSize = true;
-            this.lblDate.Location = new System.Drawing.Point(361, 201);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(80, 17);
-            this.lblDate.TabIndex = 1;
-            this.lblDate.Text = "1403/05/13";
+            this.lbltime.AutoSize = true;
+            this.lbltime.Font = new System.Drawing.Font("Segoe UI", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltime.ForeColor = System.Drawing.Color.White;
+            this.lbltime.Location = new System.Drawing.Point(4, 20);
+            this.lbltime.Name = "lbltime";
+            this.lbltime.Size = new System.Drawing.Size(174, 51);
+            this.lbltime.TabIndex = 0;
+            this.lbltime.Text = "00:00:00";
+            // 
+            // lbldate
+            // 
+            this.lbldate.AutoSize = true;
+            this.lbldate.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbldate.ForeColor = System.Drawing.Color.LightGray;
+            this.lbldate.Location = new System.Drawing.Point(278, 35);
+            this.lbldate.Name = "lbldate";
+            this.lbldate.Size = new System.Drawing.Size(168, 20);
+            this.lbldate.TabIndex = 1;
+            this.lbldate.Text = "Monday, Aug 03, 2026";
             // 
             // timer1
             // 
@@ -179,8 +195,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.lblTime);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelCard3);
             this.Controls.Add(this.panelCard2);
             this.Controls.Add(this.panelCard1);
@@ -195,8 +210,9 @@
             this.panelCard2.PerformLayout();
             this.panelCard3.ResumeLayout(false);
             this.panelCard3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -212,8 +228,9 @@
         private System.Windows.Forms.Panel panelCard3;
         private System.Windows.Forms.Label lblDelayedLoans;
         private System.Windows.Forms.Label lbltitleofcard3;
-        private System.Windows.Forms.Label lblTime;
-        private System.Windows.Forms.Label lblDate;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label lbldate;
+        private System.Windows.Forms.Label lbltime;
         private System.Windows.Forms.Timer timer1;
     }
 }
