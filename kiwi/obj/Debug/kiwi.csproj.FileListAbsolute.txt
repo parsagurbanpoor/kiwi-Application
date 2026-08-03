@@ -1,0 +1,9 @@
+E:\project\kiwi\kiwi\bin\Debug\kiwi.exe.config
+E:\project\kiwi\kiwi\bin\Debug\kiwi.exe
+E:\project\kiwi\kiwi\bin\Debug\kiwi.pdb
+E:\project\kiwi\kiwi\obj\Debug\kiwi.csprojResolveAssemblyReference.cache
+E:\project\kiwi\kiwi\obj\Debug\kiwi.signuppage.resources
+E:\project\kiwi\kiwi\obj\Debug\kiwi.Properties.Resources.resources
+E:\project\kiwi\kiwi\obj\Debug\kiwi.csproj.GenerateResource.Cache
+E:\project\kiwi\kiwi\obj\Debug\kiwi.exe
+E:\project\kiwi\kiwi\obj\Debug\kiwi.pdb
