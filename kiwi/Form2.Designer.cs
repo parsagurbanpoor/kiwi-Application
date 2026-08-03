@@ -34,12 +34,14 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnusermanegment = new System.Windows.Forms.Button();
             this.btnloan = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.SeaGreen;
+            this.panelsidebar.Controls.Add(this.button2);
             this.panelsidebar.Controls.Add(this.btnloan);
             this.panelsidebar.Controls.Add(this.btnusermanegment);
             this.panelsidebar.Controls.Add(this.button1);
@@ -117,6 +119,20 @@
             this.btnloan.Text = "Loans";
             this.btnloan.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(0, 200);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(200, 50);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "profile";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // DashBoredpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -141,5 +157,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnusermanegment;
         private System.Windows.Forms.Button btnloan;
+        private System.Windows.Forms.Button button2;
     }
 }
