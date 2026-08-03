@@ -33,12 +33,14 @@
             this.btndashbored = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnusermanegment = new System.Windows.Forms.Button();
+            this.btnloan = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.SeaGreen;
+            this.panelsidebar.Controls.Add(this.btnloan);
             this.panelsidebar.Controls.Add(this.btnusermanegment);
             this.panelsidebar.Controls.Add(this.button1);
             this.panelsidebar.Controls.Add(this.btndashbored);
@@ -101,6 +103,20 @@
             this.btnusermanegment.Text = "User Management";
             this.btnusermanegment.UseVisualStyleBackColor = true;
             // 
+            // btnloan
+            // 
+            this.btnloan.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnloan.FlatAppearance.BorderSize = 0;
+            this.btnloan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnloan.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnloan.ForeColor = System.Drawing.Color.White;
+            this.btnloan.Location = new System.Drawing.Point(0, 150);
+            this.btnloan.Name = "btnloan";
+            this.btnloan.Size = new System.Drawing.Size(200, 50);
+            this.btnloan.TabIndex = 3;
+            this.btnloan.Text = "Loans";
+            this.btnloan.UseVisualStyleBackColor = true;
+            // 
             // DashBoredpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -124,5 +140,6 @@
         private System.Windows.Forms.Panel panelmain;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnusermanegment;
+        private System.Windows.Forms.Button btnloan;
     }
 }
