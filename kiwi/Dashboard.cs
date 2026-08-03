@@ -21,5 +21,14 @@ namespace kiwi
         {
 
         }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            // نمایش ساعت زنده
+            lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+
+            // نمایش تاریخ میلادی/شمسی
+            lblDate.Text = DateTime.Now.ToShortDateString();
+        }
     }
 }

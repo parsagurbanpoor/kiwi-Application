@@ -36,7 +36,7 @@
             // 
             // panelsidebar
             // 
-            this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panelsidebar.BackColor = System.Drawing.Color.SeaGreen;
             this.panelsidebar.Controls.Add(this.btndashbored);
             this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelsidebar.Location = new System.Drawing.Point(0, 0);
