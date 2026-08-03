@@ -35,12 +35,14 @@
             this.btnusermanegment = new System.Windows.Forms.Button();
             this.btnloan = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.SeaGreen;
+            this.panelsidebar.Controls.Add(this.btnExit);
             this.panelsidebar.Controls.Add(this.button2);
             this.panelsidebar.Controls.Add(this.btnloan);
             this.panelsidebar.Controls.Add(this.btnusermanegment);
@@ -104,6 +106,7 @@
             this.btnusermanegment.TabIndex = 2;
             this.btnusermanegment.Text = "User Management";
             this.btnusermanegment.UseVisualStyleBackColor = true;
+            this.btnusermanegment.Click += new System.EventHandler(this.btnusermanegment_Click);
             // 
             // btnloan
             // 
@@ -118,6 +121,7 @@
             this.btnloan.TabIndex = 3;
             this.btnloan.Text = "Loans";
             this.btnloan.UseVisualStyleBackColor = true;
+            this.btnloan.Click += new System.EventHandler(this.btnloan_Click);
             // 
             // button2
             // 
@@ -132,6 +136,23 @@
             this.button2.TabIndex = 4;
             this.button2.Text = "profile";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Red;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Location = new System.Drawing.Point(0, 250);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(200, 50);
+            this.btnExit.TabIndex = 5;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // DashBoredpage
             // 
@@ -158,5 +179,6 @@
         private System.Windows.Forms.Button btnusermanegment;
         private System.Windows.Forms.Button btnloan;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnExit;
     }
 }

@@ -11,3 +11,6 @@ E:\project\kiwi\kiwi\bin\Debug\kiwidb.accdb
 E:\project\kiwi\kiwi\obj\Debug\kiwi.Dashboard.resources
 E:\project\kiwi\kiwi\obj\Debug\kiwi.DashBoredpage.resources
 E:\project\kiwi\kiwi\obj\Debug\kiwi.Books.resources
+E:\project\kiwi\kiwi\obj\Debug\kiwi.Loans.resources
+E:\project\kiwi\kiwi\obj\Debug\kiwi.Users.resources
+E:\project\kiwi\kiwi\obj\Debug\kiwi.profile.resources

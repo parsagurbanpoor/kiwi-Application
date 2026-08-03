@@ -36,14 +36,20 @@ namespace kiwi
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
-            // ۱. ساخت یک نمونه از فرم جدید
-            DashBoredpage mainForm = new DashBoredpage();
+            if (txtboxusername.Text=="admin" && txtboxpassword.Text=="1228")
+            {
+                DashBoredpage mainForm = new DashBoredpage();
 
-            // ۲. نمایش فرم جدید
-            mainForm.Show();
 
-            // ۳. مخفی کردن فرم فعلی (ثبت نام/ورود)
-            this.Hide();
+                mainForm.Show();
+
+
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Invalid username and password.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error); 
+            }
         }
     }
 }

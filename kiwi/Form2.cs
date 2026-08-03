@@ -36,5 +36,30 @@ namespace kiwi
         {
             ShowPage(new Books());
         }
+
+        private void btnusermanegment_Click(object sender, EventArgs e)
+        {
+            ShowPage(new Users());
+        }
+
+        private void btnloan_Click(object sender, EventArgs e)
+        {
+            ShowPage(new Loans());
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ShowPage(new profile());
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            // MessageBox.Show("Are you sure you want to close the program?", "Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+            DialogResult res = MessageBox.Show("Are you sure you want to close the program?", "Warning", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (res== DialogResult.Yes)
+            {
+            Application.Exit();
+            }
+        }
     }
 }
