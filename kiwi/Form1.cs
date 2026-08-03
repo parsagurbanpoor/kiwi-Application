@@ -36,7 +36,14 @@ namespace kiwi
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
+            // ۱. ساخت یک نمونه از فرم جدید
+            DashBoredpage mainForm = new DashBoredpage();
 
+            // ۲. نمایش فرم جدید
+            mainForm.Show();
+
+            // ۳. مخفی کردن فرم فعلی (ثبت نام/ورود)
+            this.Hide();
         }
     }
 }

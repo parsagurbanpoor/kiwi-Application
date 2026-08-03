@@ -1,6 +1,6 @@
 ﻿namespace kiwi
 {
-    partial class Form2
+    partial class DashBoredpage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,66 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panelsidebar = new System.Windows.Forms.Panel();
+            this.panelmain = new System.Windows.Forms.Panel();
+            this.btndashbored = new System.Windows.Forms.Button();
+            this.panelsidebar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Form2
+            // panelsidebar
+            // 
+            this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
+            this.panelsidebar.Controls.Add(this.btndashbored);
+            this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelsidebar.Location = new System.Drawing.Point(0, 0);
+            this.panelsidebar.Name = "panelsidebar";
+            this.panelsidebar.Size = new System.Drawing.Size(200, 553);
+            this.panelsidebar.TabIndex = 0;
+            // 
+            // panelmain
+            // 
+            this.panelmain.BackColor = System.Drawing.Color.White;
+            this.panelmain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelmain.Location = new System.Drawing.Point(200, 0);
+            this.panelmain.Name = "panelmain";
+            this.panelmain.Size = new System.Drawing.Size(782, 553);
+            this.panelmain.TabIndex = 1;
+            // 
+            // btndashbored
+            // 
+            this.btndashbored.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btndashbored.FlatAppearance.BorderSize = 0;
+            this.btndashbored.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndashbored.ForeColor = System.Drawing.Color.White;
+            this.btndashbored.Location = new System.Drawing.Point(0, 0);
+            this.btndashbored.Name = "btndashbored";
+            this.btndashbored.Size = new System.Drawing.Size(200, 50);
+            this.btndashbored.TabIndex = 0;
+            this.btndashbored.Text = "DashBored";
+            this.btndashbored.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndashbored.UseVisualStyleBackColor = true;
+            this.btndashbored.Click += new System.EventHandler(this.btndashbored_Click);
+            // 
+            // DashBoredpage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1335, 512);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.ClientSize = new System.Drawing.Size(982, 553);
+            this.Controls.Add(this.panelmain);
+            this.Controls.Add(this.panelsidebar);
+            this.Name = "DashBoredpage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "DashBored";
+            this.Load += new System.EventHandler(this.DashBoredpage_Load);
+            this.panelsidebar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel panelsidebar;
+        private System.Windows.Forms.Button btndashbored;
+        private System.Windows.Forms.Panel panelmain;
     }
 }

@@ -7,4 +7,6 @@ E:\project\kiwi\kiwi\obj\Debug\kiwi.Properties.Resources.resources
 E:\project\kiwi\kiwi\obj\Debug\kiwi.csproj.GenerateResource.Cache
 E:\project\kiwi\kiwi\obj\Debug\kiwi.exe
 E:\project\kiwi\kiwi\obj\Debug\kiwi.pdb
-E:\project\kiwi\kiwi\obj\Debug\kiwi.Form2.resources
+E:\project\kiwi\kiwi\bin\Debug\kiwidb.accdb
+E:\project\kiwi\kiwi\obj\Debug\kiwi.Dashboard.resources
+E:\project\kiwi\kiwi\obj\Debug\kiwi.DashBoredpage.resources

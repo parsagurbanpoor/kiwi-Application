@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace kiwi
 {
-    public partial class Form2 : Form
+    public partial class DashBoredpage : Form
     {
-        public Form2()
+        public DashBoredpage()
         {
             InitializeComponent();
+        }
+        private void ShowPage(UserControl page)
+        {
+            panelmain.Controls.Clear();  // پاک کردن صفحه قبلی
+            page.Dock = DockStyle.Fill;  // پر کردن کل پنل اصلی
+            panelmain.Controls.Add(page); // اضافه کردن صفحه جدید
+        }
+        private void DashBoredpage_Load(object sender, EventArgs e)
+        {
+            ShowPage(new Dashboard());
+        }
+
+        private void btndashbored_Click(object sender, EventArgs e)
+        {
+            ShowPage(new Dashboard()); // فراخوانی UserControl داشبورد
         }
     }
 }
