@@ -32,12 +32,14 @@
             this.panelmain = new System.Windows.Forms.Panel();
             this.btndashbored = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.btnusermanegment = new System.Windows.Forms.Button();
             this.panelsidebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.SeaGreen;
+            this.panelsidebar.Controls.Add(this.btnusermanegment);
             this.panelsidebar.Controls.Add(this.button1);
             this.panelsidebar.Controls.Add(this.btndashbored);
             this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
@@ -83,6 +85,21 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Book Management";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // btnusermanegment
+            // 
+            this.btnusermanegment.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnusermanegment.FlatAppearance.BorderSize = 0;
+            this.btnusermanegment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnusermanegment.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnusermanegment.ForeColor = System.Drawing.Color.White;
+            this.btnusermanegment.Location = new System.Drawing.Point(0, 100);
+            this.btnusermanegment.Name = "btnusermanegment";
+            this.btnusermanegment.Size = new System.Drawing.Size(200, 50);
+            this.btnusermanegment.TabIndex = 2;
+            this.btnusermanegment.Text = "User Management";
+            this.btnusermanegment.UseVisualStyleBackColor = true;
             // 
             // DashBoredpage
             // 
@@ -106,5 +123,6 @@
         private System.Windows.Forms.Button btndashbored;
         private System.Windows.Forms.Panel panelmain;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnusermanegment;
     }
 }

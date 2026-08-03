@@ -31,5 +31,10 @@ namespace kiwi
         {
             ShowPage(new Dashboard()); // فراخوانی UserControl داشبورد
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ShowPage(new Books());
+        }
     }
 }
