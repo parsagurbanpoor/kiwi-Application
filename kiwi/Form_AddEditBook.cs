@@ -17,7 +17,6 @@ namespace kiwi
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
@@ -40,6 +39,8 @@ namespace kiwi
 
         private void Form_AddEditBook_Load(object sender, EventArgs e)
         {
+            txtTranslator.ReadOnly = false;
+            txtTranslator.Enabled = true;
             // TODO: This line of code loads data into the 'kiwidbDataSet.Books' table. You can move, or remove it, as needed.
             this.booksTableAdapter.Fill(this.kiwidbDataSet.Books);
         }

@@ -78,5 +78,27 @@ namespace kiwi
             frm.ShowDialog();
             BooksTableAdapter.Fill(kiwidbDataSet.Books);
         }
+
+        private void btnDeleteBook_Click(object sender, EventArgs e)
+        {
+            if (dgvBooks.SelectedRows.Count > 0)
+            {
+                DialogResult result = MessageBox.Show("Are you sure you want to delete this book?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    int id = Convert.ToInt32(
+                dgvBooks.SelectedRows[0].Cells["rowDataGridViewTextBoxColumn"].Value
+                );
+                    BooksTableAdapter.Deletebook(id);
+                    // تازه‌سازی جدول
+                    BooksTableAdapter.Fill(kiwidbDataSet.Books);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a book first.");
+            }
+        }
     }
-    }
+}

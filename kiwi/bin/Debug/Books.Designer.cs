@@ -235,6 +235,7 @@
             this.btnDeleteBook.TabIndex = 2;
             this.btnDeleteBook.Text = "Delete book";
             this.btnDeleteBook.UseVisualStyleBackColor = false;
+            this.btnDeleteBook.Click += new System.EventHandler(this.btnDeleteBook_Click);
             // 
             // btnEditBook
             // 
@@ -282,8 +283,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDeleteBook;
         private System.Windows.Forms.Button btnEditBook;
-        private System.Windows.Forms.BindingSource booksBindingSource;
-        private kiwidbDataSet1 kiwidbDataSet;
         private System.Windows.Forms.DataGridViewTextBoxColumn rowDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn booknameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn publicationsDataGridViewTextBoxColumn;
@@ -297,5 +296,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn bookCoverPhotoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn authorDataGridViewTextBoxColumn;
         public kiwidbDataSet1TableAdapters.BooksTableAdapter BooksTableAdapter;
+        public System.Windows.Forms.BindingSource booksBindingSource;
+        public kiwidbDataSet1 kiwidbDataSet;
     }
 }
