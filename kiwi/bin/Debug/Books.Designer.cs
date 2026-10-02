@@ -34,11 +34,11 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnAddBook = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
+            this.booksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kiwidbDataSet1 = new kiwi.kiwidbDataSet1();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnDeleteBook = new System.Windows.Forms.Button();
             this.btnEditBook = new System.Windows.Forms.Button();
-            this.kiwidbDataSet1 = new kiwi.kiwidbDataSet1();
-            this.booksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.booksTableAdapter1 = new kiwi.kiwidbDataSet1TableAdapters.BooksTableAdapter();
             this.rowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.booknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,9 +54,9 @@
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -128,6 +128,16 @@
             this.dgvBooks.TabIndex = 1;
             this.dgvBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellContentClick);
             // 
+            // booksBindingSource1
+            // 
+            this.booksBindingSource1.DataMember = "Books";
+            this.booksBindingSource1.DataSource = this.kiwidbDataSet1;
+            // 
+            // kiwidbDataSet1
+            // 
+            this.kiwidbDataSet1.DataSetName = "kiwidbDataSet1";
+            this.kiwidbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.btnAddBook);
@@ -162,16 +172,7 @@
             this.btnEditBook.TabIndex = 2;
             this.btnEditBook.Text = "Edit book";
             this.btnEditBook.UseVisualStyleBackColor = false;
-            // 
-            // kiwidbDataSet1
-            // 
-            this.kiwidbDataSet1.DataSetName = "kiwidbDataSet1";
-            this.kiwidbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // booksBindingSource1
-            // 
-            this.booksBindingSource1.DataMember = "Books";
-            this.booksBindingSource1.DataSource = this.kiwidbDataSet1;
+            this.btnEditBook.Click += new System.EventHandler(this.btnEditBook_Click);
             // 
             // booksTableAdapter1
             // 
@@ -242,7 +243,7 @@
             // 
             // ageGroupDataGridViewTextBoxColumn
             // 
-            this.ageGroupDataGridViewTextBoxColumn.DataPropertyName = "age group";
+            this.ageGroupDataGridViewTextBoxColumn.DataPropertyName = "agegroup";
             this.ageGroupDataGridViewTextBoxColumn.HeaderText = "age group";
             this.ageGroupDataGridViewTextBoxColumn.Name = "ageGroupDataGridViewTextBoxColumn";
             this.ageGroupDataGridViewTextBoxColumn.ReadOnly = true;
@@ -273,9 +274,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -290,6 +291,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDeleteBook;
         private System.Windows.Forms.Button btnEditBook;
+        private System.Windows.Forms.BindingSource booksBindingSource1;
+        private kiwidbDataSet1 kiwidbDataSet1;
         private System.Windows.Forms.DataGridViewTextBoxColumn rowDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn booknameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn publicationsDataGridViewTextBoxColumn;
@@ -302,8 +305,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ageGroupDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bookCoverPhotoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn authorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource booksBindingSource1;
-        private kiwidbDataSet1 kiwidbDataSet1;
-        private kiwidbDataSet1TableAdapters.BooksTableAdapter booksTableAdapter1;
+        public kiwidbDataSet1TableAdapters.BooksTableAdapter booksTableAdapter1;
     }
 }

@@ -61,6 +61,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="edit book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit book.Designer.cs">
+      <DependentUpon>edit book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,10 +85,15 @@
     <Compile Include="Form_AddEditBook.Designer.cs">
       <DependentUpon>Form_AddEditBook.cs</DependentUpon>
     </Compile>
+    <Compile Include="kiwidbDataSet.cs">
+      <DependentUpon>kiwidbDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="kiwidbDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>kiwidbDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="kiwidbDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -116,6 +127,9 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="edit book.resx">
+      <DependentUpon>edit book.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,14 +160,17 @@
     </EmbeddedResource>
     <None Include="kiwidbDataSet.xsc">
       <DependentUpon>kiwidbDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>kiwidbDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet.xss">
       <DependentUpon>kiwidbDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet1.xsc">
       <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>

@@ -37,3 +37,9 @@ E:\project\kiwi-Application\kiwi\obj\Debug\kiwi.csproj.GenerateResource.Cache
 E:\project\kiwi-Application\kiwi\bin\Debug\Books.resx
 E:\project\kiwi-Application\kiwi\bin\Debug\Books.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Books.Designer.cs
+E:\project\kiwi-Application\kiwi\obj\Debug\kiwi.edit_book.resources
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.Designer.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.xsc
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.xsd
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.xss

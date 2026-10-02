@@ -34,6 +34,12 @@
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnAddBook = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
+            this.booksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.kiwidbDataSet1 = new kiwi.kiwidbDataSet1();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnDeleteBook = new System.Windows.Forms.Button();
+            this.btnEditBook = new System.Windows.Forms.Button();
+            this.booksTableAdapter1 = new kiwi.kiwidbDataSet1TableAdapters.BooksTableAdapter();
             this.rowDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.booknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.publicationsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,12 +52,6 @@
             this.ageGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bookCoverPhotoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.authorDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.booksBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.kiwidbDataSet1 = new kiwi.kiwidbDataSet1();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnDeleteBook = new System.Windows.Forms.Button();
-            this.btnEditBook = new System.Windows.Forms.Button();
-            this.booksTableAdapter1 = new kiwi.kiwidbDataSet1TableAdapters.BooksTableAdapter();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource1)).BeginInit();
@@ -128,6 +128,56 @@
             this.dgvBooks.TabIndex = 1;
             this.dgvBooks.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBooks_CellContentClick);
             // 
+            // booksBindingSource1
+            // 
+            this.booksBindingSource1.DataMember = "Books";
+            this.booksBindingSource1.DataSource = this.kiwidbDataSet1;
+            // 
+            // kiwidbDataSet1
+            // 
+            this.kiwidbDataSet1.DataSetName = "kiwidbDataSet1";
+            this.kiwidbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnAddBook);
+            this.panel2.Controls.Add(this.btnDeleteBook);
+            this.panel2.Controls.Add(this.btnEditBook);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 486);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(734, 60);
+            this.panel2.TabIndex = 2;
+            // 
+            // btnDeleteBook
+            // 
+            this.btnDeleteBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.btnDeleteBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeleteBook.ForeColor = System.Drawing.Color.White;
+            this.btnDeleteBook.Location = new System.Drawing.Point(220, 14);
+            this.btnDeleteBook.Name = "btnDeleteBook";
+            this.btnDeleteBook.Size = new System.Drawing.Size(94, 32);
+            this.btnDeleteBook.TabIndex = 2;
+            this.btnDeleteBook.Text = "Delete book";
+            this.btnDeleteBook.UseVisualStyleBackColor = false;
+            // 
+            // btnEditBook
+            // 
+            this.btnEditBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(110)))), ((int)(((byte)(42)))));
+            this.btnEditBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditBook.ForeColor = System.Drawing.Color.White;
+            this.btnEditBook.Location = new System.Drawing.Point(320, 14);
+            this.btnEditBook.Name = "btnEditBook";
+            this.btnEditBook.Size = new System.Drawing.Size(90, 32);
+            this.btnEditBook.TabIndex = 2;
+            this.btnEditBook.Text = "Edit book";
+            this.btnEditBook.UseVisualStyleBackColor = false;
+            this.btnEditBook.Click += new System.EventHandler(this.btnEditBook_Click);
+            // 
+            // booksTableAdapter1
+            // 
+            this.booksTableAdapter1.ClearBeforeFill = true;
+            // 
             // rowDataGridViewTextBoxColumn
             // 
             this.rowDataGridViewTextBoxColumn.DataPropertyName = "row";
@@ -193,7 +243,7 @@
             // 
             // ageGroupDataGridViewTextBoxColumn
             // 
-            this.ageGroupDataGridViewTextBoxColumn.DataPropertyName = "age group";
+            this.ageGroupDataGridViewTextBoxColumn.DataPropertyName = "agegroup";
             this.ageGroupDataGridViewTextBoxColumn.HeaderText = "age group";
             this.ageGroupDataGridViewTextBoxColumn.Name = "ageGroupDataGridViewTextBoxColumn";
             this.ageGroupDataGridViewTextBoxColumn.ReadOnly = true;
@@ -211,56 +261,6 @@
             this.authorDataGridViewTextBoxColumn.HeaderText = "Author";
             this.authorDataGridViewTextBoxColumn.Name = "authorDataGridViewTextBoxColumn";
             this.authorDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // booksBindingSource1
-            // 
-            this.booksBindingSource1.DataMember = "Books";
-            this.booksBindingSource1.DataSource = this.kiwidbDataSet1;
-            // 
-            // kiwidbDataSet1
-            // 
-            this.kiwidbDataSet1.DataSetName = "kiwidbDataSet1";
-            this.kiwidbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.btnAddBook);
-            this.panel2.Controls.Add(this.btnDeleteBook);
-            this.panel2.Controls.Add(this.btnEditBook);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 486);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(734, 60);
-            this.panel2.TabIndex = 2;
-            // 
-            // btnDeleteBook
-            // 
-            this.btnDeleteBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
-            this.btnDeleteBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteBook.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteBook.Location = new System.Drawing.Point(220, 14);
-            this.btnDeleteBook.Name = "btnDeleteBook";
-            this.btnDeleteBook.Size = new System.Drawing.Size(94, 32);
-            this.btnDeleteBook.TabIndex = 2;
-            this.btnDeleteBook.Text = "Delete book";
-            this.btnDeleteBook.UseVisualStyleBackColor = false;
-            // 
-            // btnEditBook
-            // 
-            this.btnEditBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(249)))), ((int)(((byte)(110)))), ((int)(((byte)(42)))));
-            this.btnEditBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditBook.ForeColor = System.Drawing.Color.White;
-            this.btnEditBook.Location = new System.Drawing.Point(320, 14);
-            this.btnEditBook.Name = "btnEditBook";
-            this.btnEditBook.Size = new System.Drawing.Size(90, 32);
-            this.btnEditBook.TabIndex = 2;
-            this.btnEditBook.Text = "Edit book";
-            this.btnEditBook.UseVisualStyleBackColor = false;
-            this.btnEditBook.Click += new System.EventHandler(this.btnEditBook_Click);
-            // 
-            // booksTableAdapter1
-            // 
-            this.booksTableAdapter1.ClearBeforeFill = true;
             // 
             // Books
             // 
@@ -291,6 +291,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnDeleteBook;
         private System.Windows.Forms.Button btnEditBook;
+        private System.Windows.Forms.BindingSource booksBindingSource1;
+        private kiwidbDataSet1 kiwidbDataSet1;
         private System.Windows.Forms.DataGridViewTextBoxColumn rowDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn booknameDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn publicationsDataGridViewTextBoxColumn;
@@ -303,8 +305,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ageGroupDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn bookCoverPhotoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn authorDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource booksBindingSource1;
-        private kiwidbDataSet1 kiwidbDataSet1;
-        private kiwidbDataSet1TableAdapters.BooksTableAdapter booksTableAdapter1;
+        public kiwidbDataSet1TableAdapters.BooksTableAdapter booksTableAdapter1;
     }
 }
