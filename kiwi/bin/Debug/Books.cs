@@ -16,7 +16,7 @@ namespace kiwi
         {
             InitializeComponent();
 
-            booksTableAdapter1.Fill(kiwidbDataSet1.Books);
+            BooksTableAdapter.Fill(kiwidbDataSet.Books);
         }
 
         private void btnAddBook_Click(object sender, EventArgs e)
@@ -26,7 +26,7 @@ namespace kiwi
             addeditform.ShowDialog();
 
             // دوباره اطلاعات کتاب‌ها را از دیتابیس می‌خوانیم
-            booksTableAdapter1.Fill(kiwidbDataSet1.Books);
+            BooksTableAdapter.Fill(kiwidbDataSet.Books);
         }
 
         private void dgvBooks_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -61,13 +61,14 @@ namespace kiwi
             //category
             frm.edittxtcategory.Text = dgvBooks.CurrentRow.Cells["categoryDataGridViewTextBoxColumn"].Value.ToString();
             //agegrup
+            /*
             var value = dgvBooks.CurrentRow.Cells["agegroupDataGridViewTextBoxColumn"].Value;
 
             if (value != null)
             {
                 frm.txtagegrupedit.Text = value.ToString();
             }
-
+            */
             frm.RowID = Convert.ToInt32(
    dgvBooks.CurrentRow.Cells["rowDataGridViewTextBoxColumn"].Value);
 
@@ -75,6 +76,7 @@ namespace kiwi
             dgvBooks.CurrentRow.Cells["booknameDataGridViewTextBoxColumn"].Value?.ToString();
 
             frm.ShowDialog();
+            BooksTableAdapter.Fill(kiwidbDataSet.Books);
         }
     }
     }

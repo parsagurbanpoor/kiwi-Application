@@ -43,3 +43,9 @@ E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.Designer.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.xsc
 E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.xsd
 E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet.xss
+E:\project\kiwi-Application\kiwi\bin\Debug\edit book.resx
+E:\project\kiwi-Application\kiwi\bin\Debug\Form_AddEditBook.resx
+E:\project\kiwi-Application\kiwi\bin\Debug\edit book.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\edit book.Designer.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\Form_AddEditBook.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\Form_AddEditBook.Designer.cs

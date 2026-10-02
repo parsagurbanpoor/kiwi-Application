@@ -63,9 +63,11 @@
     </Compile>
     <Compile Include="edit book.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="edit book.Designer.cs">
       <DependentUpon>edit book.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -81,9 +83,11 @@
     </Compile>
     <Compile Include="Form_AddEditBook.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Form_AddEditBook.Designer.cs">
       <DependentUpon>Form_AddEditBook.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="kiwidbDataSet.cs">
       <DependentUpon>kiwidbDataSet.xsd</DependentUpon>
@@ -129,6 +133,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="edit book.resx">
       <DependentUpon>edit book.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -138,6 +143,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_AddEditBook.resx">
       <DependentUpon>Form_AddEditBook.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Loans.resx">
       <DependentUpon>Loans.cs</DependentUpon>
@@ -213,7 +219,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="kiwidb.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\download.png" />
     <None Include="Resources\Gemini_Generated_Image_sugg3lsugg3lsugg.png" />
