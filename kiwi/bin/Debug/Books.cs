@@ -33,10 +33,5 @@ namespace kiwi
         {
 
         }
-
-        private void btnEditBook_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

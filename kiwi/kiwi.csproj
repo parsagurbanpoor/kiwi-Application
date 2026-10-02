@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="Books.cs">
       <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Books.Designer.cs">
       <DependentUpon>Books.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>UserControl</SubType>
@@ -82,6 +84,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>kiwidbDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="kiwidbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Loans.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -104,6 +111,7 @@
     </Compile>
     <EmbeddedResource Include="Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -147,6 +155,17 @@
     <None Include="kiwidbDataSet.xss">
       <DependentUpon>kiwidbDataSet.xsd</DependentUpon>
     </None>
+    <None Include="kiwidbDataSet1.xsc">
+      <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="kiwidbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kiwidbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kiwidbDataSet1.xss">
+      <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -177,7 +196,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="kiwidb.mdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\download.png" />
     <None Include="Resources\Gemini_Generated_Image_sugg3lsugg3lsugg.png" />

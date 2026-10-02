@@ -34,21 +34,8 @@ namespace kiwi
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtBookname.Text) || string.IsNullOrWhiteSpace(txtAuthor.Text))
-            {
-                MessageBox.Show("Please do not leave any of the values ​​blank.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            try
-            {
-                this.Validate();
-                this.booksBindingSource.EndEdit();
-                MessageBox.Show("Book information saved successfully.","info",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show("Error saving data"+ex.Message,"Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-            }
+            booksTableAdapter.insertbook(txtBookname.Text, txtPublication.Text, txtpublicationyeaar.Text, int.Parse(txtISBN.Text), txtTranslator.Text, txtlanguage.Text,"null", txtcategory.Text, txtAgegroup.Text,"null", txtAuthor.Text);
+            MessageBox.Show("Saving completed successfully.", "successful");
         }
 
         private void Form_AddEditBook_Load(object sender, EventArgs e)
