@@ -31,9 +31,12 @@ namespace kiwi
 
         private void profile_Load(object sender, EventArgs e)
         {
-            Users frm = new Users();
-
-            
+            lblfname.Text = signuppage.Global.firstname;
+            lblLanme.Text = signuppage.Global.Lastname;
+            lblAgeprofile.Text = signuppage.Global.Age.ToString();
+            lbltypeprofile.Text = signuppage.Global.UserType.ToString();
+            lblGenderpeofile.Text = signuppage.Global.gender;
+            lbleducationprofile.Text = signuppage.Global.edu;
         }
     }
 }
