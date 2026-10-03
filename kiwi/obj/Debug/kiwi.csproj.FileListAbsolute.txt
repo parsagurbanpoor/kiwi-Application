@@ -64,3 +64,6 @@ E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet1.xss
 E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.xsc
 E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.xsd
 E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.xss
+E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.resx
+E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.Designer.cs

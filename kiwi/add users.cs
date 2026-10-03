@@ -58,7 +58,10 @@ namespace kiwi
                 }
                 //Data Entry
                 frm.usersTableAdapter.InsertUser(txtboxFname.Text,txtboxLname.Text,txtboxUsername.Text,txtboxPassword.Text, userType, "Null",Byte.Parse(txtboxage.Text),comboBox2.Text, comboboxGender.Text);
-            MessageBox.Show("Saving completed successfully.", "successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                
+
+                MessageBox.Show("Saving completed successfully.", "successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
             else
             {
