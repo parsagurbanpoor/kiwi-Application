@@ -1198,15 +1198,15 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[3];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT row, firstname, lastname, username, [password], type, profilepic, age, edu" +
-                "cation, Gender FROM Users";
+            this._commandCollection[0].CommandText = "SELECT *\r\nFROM Users\r\nWHERE Username = ? AND Password = ?";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("username", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "username", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("password", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[1] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT UserType\r\nFROM Users\r\nWHERE Username = ? AND Password = ?";
+            this._commandCollection[1].CommandText = "SELECT row, firstname, lastname, username, [password], type, profilepic, age, edu" +
+                "cation, Gender\r\nFROM     Users";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("username", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "username", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[1].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("password", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[2].Connection = this.Connection;
             this._commandCollection[2].CommandText = "INSERT INTO Users\r\n                  (firstname, lastname, username, [password], " +
@@ -1227,8 +1227,20 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(kiwidbDataSet2.UsersDataTable dataTable) {
+        public virtual int LginUser(kiwidbDataSet2.UsersDataTable dataTable, string username, string password) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((username == null)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(username));
+            }
+            if ((password == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(password));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -1240,19 +1252,8 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual kiwidbDataSet2.UsersDataTable GetData() {
+        public virtual kiwidbDataSet2.UsersDataTable LoginUser(string username, string password) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            kiwidbDataSet2.UsersDataTable dataTable = new kiwidbDataSet2.UsersDataTable();
-            this.Adapter.Fill(dataTable);
-            return dataTable;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
-        public virtual int FillBy(kiwidbDataSet2.UsersDataTable dataTable, string username, string password) {
-            this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((username == null)) {
                 this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1265,6 +1266,17 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(password));
             }
+            kiwidbDataSet2.UsersDataTable dataTable = new kiwidbDataSet2.UsersDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy(kiwidbDataSet2.UsersDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -1276,20 +1288,8 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
-        public virtual kiwidbDataSet2.UsersDataTable GetUserType(string username, string password) {
+        public virtual kiwidbDataSet2.UsersDataTable GetDataBy1() {
             this.Adapter.SelectCommand = this.CommandCollection[1];
-            if ((username == null)) {
-                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(username));
-            }
-            if ((password == null)) {
-                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(password));
-            }
             kiwidbDataSet2.UsersDataTable dataTable = new kiwidbDataSet2.UsersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

@@ -16,7 +16,7 @@ namespace kiwi
         {
             InitializeComponent();
 
-            usersTableAdapter.Fill(kiwidbDataSet2.Users);
+            usersTableAdapter.FillBy(kiwidbDataSet2.Users);
         }
         
         private void btnAddUser_Click(object sender, EventArgs e)
@@ -24,7 +24,7 @@ namespace kiwi
             addusers frm = new addusers();
 
             frm.ShowDialog();
-            usersTableAdapter.Fill(kiwidbDataSet2.Users);
+            usersTableAdapter.FillBy(kiwidbDataSet2.Users);
         }
     }
 }

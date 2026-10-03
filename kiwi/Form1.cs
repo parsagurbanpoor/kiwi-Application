@@ -18,7 +18,7 @@ namespace kiwi
         }
         public static class Global
         {
-            public static byte Usertype;
+            public static byte UserType;
         }
         private void btnshow_Click(object sender, EventArgs e)
         {
@@ -39,45 +39,45 @@ namespace kiwi
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
-            /*
-            if (txtboxusername.Text=="admin" && txtboxpassword.Text=="1228")
-            {
-                DashBoredpage mainForm = new DashBoredpage();
-
-
-                mainForm.Show();
-
-
-                this.Hide();
-            }
-            else
-            {
-                MessageBox.Show("Invalid username and password.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error); 
-            }
-            */
-
-
-
+            //Access to users
 
             Users frm = new Users();
-            var result = frm.usersTableAdapter.GetUserType(txtboxusername.Text, txtboxpassword.Text);
+            
+            //Authentication
 
-            if (result != null)
+            var user = frm.usersTableAdapter.LoginUser(txtboxusername.Text, txtboxpassword.Text);
+            
+            //Presence or absence of the user in the database
+
+            if (user.Count > 0)
             {
-                Global.Usertype = Convert.ToByte(result);
+                //Get user role
 
-                MessageBox.Show("Successful login", "Successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                Global.UserType = Convert.ToByte(user[0]["Type"]);
+
+                //Authentication success message
+
+                MessageBox.Show("Login successful:)", "successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                //Access the dashboard
 
                 DashBoredpage mainForm = new DashBoredpage();
 
+                //Logging in and opening the dashboard page
+
                 mainForm.Show();
-                
+
+                //Hiding the current page
+
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("");
+                //Authentication failure message
+
+                MessageBox.Show("Login failed :(", "failed",MessageBoxButtons.RetryCancel,MessageBoxIcon.Error);
             }
+
         }
     }
 }
