@@ -22,6 +22,7 @@ namespace kiwi
             addusers frm = new addusers();
 
             frm.ShowDialog();
+            usersTableAdapter.Fill(kiwidbDataSet2.Users);
         }
     }
 }
