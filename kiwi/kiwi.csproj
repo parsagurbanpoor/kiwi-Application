@@ -79,6 +79,12 @@
       <DependentUpon>edit book.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="edit user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit user.Designer.cs">
+      <DependentUpon>edit user.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +164,9 @@
     <EmbeddedResource Include="edit book.resx">
       <DependentUpon>edit book.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit user.resx">
+      <DependentUpon>edit user.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

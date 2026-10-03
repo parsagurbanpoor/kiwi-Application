@@ -26,7 +26,7 @@ namespace kiwi
 
         private void editbookbtn_Click(object sender, EventArgs e)
         {
-          DialogResult res= MessageBox.Show("Are you sure you want to edit?", "edit alert",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+          DialogResult res= MessageBox.Show("Are you sure you want to edit?","Warning",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
             if (res == DialogResult.Yes)
             {
                 

@@ -1195,7 +1195,7 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[3];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[4];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT *\r\nFROM Users\r\nWHERE Username = ? AND Password = ?";
@@ -1221,6 +1221,22 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("age", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "age", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("education", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "education", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[2].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Gender", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gender", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[3].Connection = this.Connection;
+            this._commandCollection[3].CommandText = "UPDATE Users\r\nSET          firstname = ?, lastname = ?, username = ?, [password] " +
+                "= ?, type = ?, profilepic = ?, age = ?, education = ?, Gender = ?\r\nWHERE  (row =" +
+                " ?)";
+            this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("firstname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "firstname", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("lastname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "lastname", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("username", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "username", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("password", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("type", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "type", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("profilepic", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "profilepic", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("age", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "age", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("education", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "education", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Gender", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gender", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_row", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "row", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1720,6 +1736,84 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
             else {
                 command.Parameters[8].Value = ((string)(Gender));
             }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int UpdateUser(string firstname, string lastname, string username, string password, global::System.Nullable<byte> type, string profilepic, global::System.Nullable<byte> age, string education, string Gender, int Original_row) {
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[3];
+            if ((firstname == null)) {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[0].Value = ((string)(firstname));
+            }
+            if ((lastname == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(lastname));
+            }
+            if ((username == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(username));
+            }
+            if ((password == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(password));
+            }
+            if ((type.HasValue == true)) {
+                command.Parameters[4].Value = ((byte)(type.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((profilepic == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(profilepic));
+            }
+            if ((age.HasValue == true)) {
+                command.Parameters[6].Value = ((byte)(age.Value));
+            }
+            else {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((education == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(education));
+            }
+            if ((Gender == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(Gender));
+            }
+            command.Parameters[9].Value = ((int)(Original_row));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {

@@ -67,3 +67,4 @@ E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.xss
 E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.resx
 E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.Designer.cs
+E:\project\kiwi-Application\kiwi\obj\Debug\kiwi.edit_user.resources

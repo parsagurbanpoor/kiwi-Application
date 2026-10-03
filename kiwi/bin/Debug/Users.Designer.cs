@@ -130,6 +130,7 @@
             this.btnEditUser.TabIndex = 2;
             this.btnEditUser.Text = "Edit user";
             this.btnEditUser.UseVisualStyleBackColor = false;
+            this.btnEditUser.Click += new System.EventHandler(this.btnEditUser_Click);
             // 
             // dgvUsers
             // 
