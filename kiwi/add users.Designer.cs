@@ -139,7 +139,7 @@
             this.txtboxRow.Location = new System.Drawing.Point(57, 9);
             this.txtboxRow.Name = "txtboxRow";
             this.txtboxRow.Size = new System.Drawing.Size(42, 22);
-            this.txtboxRow.TabIndex = 1;
+            this.txtboxRow.TabIndex = 0;
             // 
             // txtboxFname
             // 
@@ -153,28 +153,28 @@
             this.txtboxLname.Location = new System.Drawing.Point(92, 85);
             this.txtboxLname.Name = "txtboxLname";
             this.txtboxLname.Size = new System.Drawing.Size(174, 22);
-            this.txtboxLname.TabIndex = 1;
+            this.txtboxLname.TabIndex = 2;
             // 
             // txtboxUsername
             // 
             this.txtboxUsername.Location = new System.Drawing.Point(95, 123);
             this.txtboxUsername.Name = "txtboxUsername";
             this.txtboxUsername.Size = new System.Drawing.Size(104, 22);
-            this.txtboxUsername.TabIndex = 1;
+            this.txtboxUsername.TabIndex = 3;
             // 
             // txtboxPassword
             // 
             this.txtboxPassword.Location = new System.Drawing.Point(92, 161);
             this.txtboxPassword.Name = "txtboxPassword";
             this.txtboxPassword.Size = new System.Drawing.Size(175, 22);
-            this.txtboxPassword.TabIndex = 1;
+            this.txtboxPassword.TabIndex = 4;
             // 
             // txtboxage
             // 
             this.txtboxage.Location = new System.Drawing.Point(55, 237);
             this.txtboxage.Name = "txtboxage";
             this.txtboxage.Size = new System.Drawing.Size(42, 22);
-            this.txtboxage.TabIndex = 1;
+            this.txtboxage.TabIndex = 6;
             // 
             // comboboxType
             // 
@@ -187,15 +187,21 @@
             this.comboboxType.Location = new System.Drawing.Point(62, 199);
             this.comboboxType.Name = "comboboxType";
             this.comboboxType.Size = new System.Drawing.Size(121, 24);
-            this.comboboxType.TabIndex = 2;
+            this.comboboxType.TabIndex = 5;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "Diploma",
+            "Associate",
+            "Bachelor",
+            "Master",
+            "Doctor"});
             this.comboBox2.Location = new System.Drawing.Point(91, 272);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 24);
-            this.comboBox2.TabIndex = 2;
+            this.comboBox2.TabIndex = 7;
             // 
             // comboboxGender
             // 
@@ -206,7 +212,7 @@
             this.comboboxGender.Location = new System.Drawing.Point(78, 313);
             this.comboboxGender.Name = "comboboxGender";
             this.comboboxGender.Size = new System.Drawing.Size(121, 24);
-            this.comboboxGender.TabIndex = 2;
+            this.comboboxGender.TabIndex = 8;
             // 
             // Adduserbtn
             // 
@@ -215,7 +221,7 @@
             this.Adduserbtn.Location = new System.Drawing.Point(434, 364);
             this.Adduserbtn.Name = "Adduserbtn";
             this.Adduserbtn.Size = new System.Drawing.Size(126, 57);
-            this.Adduserbtn.TabIndex = 10;
+            this.Adduserbtn.TabIndex = 9;
             this.Adduserbtn.Text = "Add";
             this.Adduserbtn.UseVisualStyleBackColor = false;
             this.Adduserbtn.Click += new System.EventHandler(this.Adduserbtn_Click);
@@ -227,7 +233,7 @@
             this.cancelAdduserbtn.Location = new System.Drawing.Point(85, 364);
             this.cancelAdduserbtn.Name = "cancelAdduserbtn";
             this.cancelAdduserbtn.Size = new System.Drawing.Size(126, 57);
-            this.cancelAdduserbtn.TabIndex = 11;
+            this.cancelAdduserbtn.TabIndex = 10;
             this.cancelAdduserbtn.Text = "Cancel";
             this.cancelAdduserbtn.UseVisualStyleBackColor = false;
             this.cancelAdduserbtn.Click += new System.EventHandler(this.cancelAdduserbtn_Click);
@@ -249,7 +255,7 @@
             this.button1.Location = new System.Drawing.Point(518, 159);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 35);
-            this.button1.TabIndex = 13;
+            this.button1.TabIndex = 11;
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = false;
             // 
