@@ -46,6 +46,11 @@
             this.comboboxType = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.comboboxGender = new System.Windows.Forms.ComboBox();
+            this.Adduserbtn = new System.Windows.Forms.Button();
+            this.cancelAdduserbtn = new System.Windows.Forms.Button();
+            this.pictrueboxedit = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictrueboxedit)).BeginInit();
             this.SuspendLayout();
             // 
             // lblrow
@@ -174,6 +179,11 @@
             // comboboxType
             // 
             this.comboboxType.FormattingEnabled = true;
+            this.comboboxType.Items.AddRange(new object[] {
+            "Patron",
+            "Circulation Clerk",
+            "Librarian ",
+            "Administrator"});
             this.comboboxType.Location = new System.Drawing.Point(62, 199);
             this.comboboxType.Name = "comboboxType";
             this.comboboxType.Size = new System.Drawing.Size(121, 24);
@@ -190,16 +200,68 @@
             // comboboxGender
             // 
             this.comboboxGender.FormattingEnabled = true;
+            this.comboboxGender.Items.AddRange(new object[] {
+            "Male",
+            "female"});
             this.comboboxGender.Location = new System.Drawing.Point(78, 313);
             this.comboboxGender.Name = "comboboxGender";
             this.comboboxGender.Size = new System.Drawing.Size(121, 24);
             this.comboboxGender.TabIndex = 2;
+            // 
+            // Adduserbtn
+            // 
+            this.Adduserbtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.Adduserbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Adduserbtn.Location = new System.Drawing.Point(434, 364);
+            this.Adduserbtn.Name = "Adduserbtn";
+            this.Adduserbtn.Size = new System.Drawing.Size(126, 57);
+            this.Adduserbtn.TabIndex = 10;
+            this.Adduserbtn.Text = "Add";
+            this.Adduserbtn.UseVisualStyleBackColor = false;
+            this.Adduserbtn.Click += new System.EventHandler(this.Adduserbtn_Click);
+            // 
+            // cancelAdduserbtn
+            // 
+            this.cancelAdduserbtn.BackColor = System.Drawing.Color.Red;
+            this.cancelAdduserbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cancelAdduserbtn.Location = new System.Drawing.Point(85, 364);
+            this.cancelAdduserbtn.Name = "cancelAdduserbtn";
+            this.cancelAdduserbtn.Size = new System.Drawing.Size(126, 57);
+            this.cancelAdduserbtn.TabIndex = 11;
+            this.cancelAdduserbtn.Text = "Cancel";
+            this.cancelAdduserbtn.UseVisualStyleBackColor = false;
+            this.cancelAdduserbtn.Click += new System.EventHandler(this.cancelAdduserbtn_Click);
+            // 
+            // pictrueboxedit
+            // 
+            this.pictrueboxedit.Image = global::kiwi.Properties.Resources.waves_deep_blue_3840x2160_12119;
+            this.pictrueboxedit.Location = new System.Drawing.Point(501, 12);
+            this.pictrueboxedit.Name = "pictrueboxedit";
+            this.pictrueboxedit.Size = new System.Drawing.Size(119, 129);
+            this.pictrueboxedit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictrueboxedit.TabIndex = 12;
+            this.pictrueboxedit.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(518, 159);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(82, 35);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "Browse";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // addusers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 433);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictrueboxedit);
+            this.Controls.Add(this.cancelAdduserbtn);
+            this.Controls.Add(this.Adduserbtn);
             this.Controls.Add(this.comboboxGender);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboboxType);
@@ -218,8 +280,10 @@
             this.Controls.Add(this.lblLname);
             this.Controls.Add(this.lblfname);
             this.Controls.Add(this.lblrow);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "addusers";
-            this.Text = "addusers";
+            this.Text = "Add Users";
+            ((System.ComponentModel.ISupportInitialize)(this.pictrueboxedit)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -245,5 +309,9 @@
         private System.Windows.Forms.ComboBox comboboxType;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.ComboBox comboboxGender;
+        private System.Windows.Forms.Button Adduserbtn;
+        private System.Windows.Forms.Button cancelAdduserbtn;
+        private System.Windows.Forms.PictureBox pictrueboxedit;
+        private System.Windows.Forms.Button button1;
     }
 }

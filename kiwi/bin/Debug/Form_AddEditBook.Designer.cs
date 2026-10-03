@@ -311,7 +311,7 @@
             this.Name = "Form_AddEditBook";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form Add Edit Book";
+            this.Text = "Add Book";
             this.Load += new System.EventHandler(this.Form_AddEditBook_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.booksBindingSource)).EndInit();

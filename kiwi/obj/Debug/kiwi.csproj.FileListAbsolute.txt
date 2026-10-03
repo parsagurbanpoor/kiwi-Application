@@ -49,3 +49,7 @@ E:\project\kiwi-Application\kiwi\bin\Debug\edit book.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\edit book.Designer.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Form_AddEditBook.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Form_AddEditBook.Designer.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\Users.resx
+E:\project\kiwi-Application\kiwi\bin\Debug\Users.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\Users.Designer.cs
+E:\project\kiwi-Application\kiwi\obj\Debug\kiwi.addusers.resources

@@ -131,9 +131,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users.cs">
       <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <EmbeddedResource Include="add users.resx">
       <DependentUpon>add users.cs</DependentUpon>
@@ -177,6 +179,7 @@
     </Compile>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <None Include="kiwidbDataSet.xsc">
       <DependentUpon>kiwidbDataSet.xsd</DependentUpon>

@@ -33,8 +33,9 @@ namespace kiwi
 
         private void button2_Click(object sender, EventArgs e)
         {
+            //Data Entry
             booksTableAdapter.insertbook(txtBookname.Text, txtPublication.Text, txtpublicationyeaar.Text, int.Parse(txtISBN.Text), txtTranslator.Text, txtlanguage.Text,"null", txtcategory.Text, txtAgegroup.Text,"null", txtAuthor.Text);
-            MessageBox.Show("Saving completed successfully.", "successful");
+            MessageBox.Show("Saving completed successfully.", "successful", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void Form_AddEditBook_Load(object sender, EventArgs e)
