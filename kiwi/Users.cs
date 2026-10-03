@@ -50,6 +50,24 @@ namespace kiwi
             frm.ShowDialog();
 
             frm.Hide();
+            usersTableAdapter.FillBy(kiwidbDataSet2.Users);
+        }
+
+        private void btnDeleteUser_Click(object sender, EventArgs e)
+        {
+            if (dgvUsers.SelectedRows.Count > 0)
+            {
+                DialogResult res = MessageBox.Show("Are you sure you want to delete this book ?", "Delete", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (res == DialogResult.Yes)
+                {
+                    int id = Convert.ToInt32(
+                        dgvUsers.SelectedRows[0].Cells["rowDataGridViewTextBoxColumn"].Value
+                        );
+                    usersTableAdapter.DeleteUser(id);
+                    usersTableAdapter.FillBy(kiwidbDataSet2.Users);
+                }
+            }
         }
     }
 }

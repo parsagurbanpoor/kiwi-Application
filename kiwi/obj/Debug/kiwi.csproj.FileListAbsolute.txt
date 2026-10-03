@@ -68,3 +68,6 @@ E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.resx
 E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Dashboard.Designer.cs
 E:\project\kiwi-Application\kiwi\obj\Debug\kiwi.edit_user.resources
+E:\project\kiwi-Application\kiwi\bin\Debug\edit user.resx
+E:\project\kiwi-Application\kiwi\bin\Debug\edit user.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\edit user.Designer.cs
