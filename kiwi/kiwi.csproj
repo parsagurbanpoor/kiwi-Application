@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="add users.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="add users.Designer.cs">
       <DependentUpon>add users.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Books.cs">
       <SubType>UserControl</SubType>
@@ -109,11 +111,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="kiwidbDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>kiwidbDataSet2.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Loans.cs">
       <SubType>UserControl</SubType>
@@ -139,6 +143,7 @@
     </Compile>
     <EmbeddedResource Include="add users.resx">
       <DependentUpon>add users.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Books.resx">
       <DependentUpon>Books.cs</DependentUpon>
@@ -197,25 +202,31 @@
     </None>
     <None Include="kiwidbDataSet1.xsc">
       <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>kiwidbDataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet1.xss">
       <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet2.xsc">
       <DependentUpon>kiwidbDataSet2.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet2.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>kiwidbDataSet2.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet2.xss">
       <DependentUpon>kiwidbDataSet2.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

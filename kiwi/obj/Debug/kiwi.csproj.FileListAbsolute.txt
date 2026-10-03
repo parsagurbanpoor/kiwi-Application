@@ -53,3 +53,14 @@ E:\project\kiwi-Application\kiwi\bin\Debug\Users.resx
 E:\project\kiwi-Application\kiwi\bin\Debug\Users.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Users.Designer.cs
 E:\project\kiwi-Application\kiwi\obj\Debug\kiwi.addusers.resources
+E:\project\kiwi-Application\kiwi\bin\Debug\add users.resx
+E:\project\kiwi-Application\kiwi\bin\Debug\add users.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\add users.Designer.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet1.Designer.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.Designer.cs
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet1.xsc
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet1.xsd
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet1.xss
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.xsc
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.xsd
+E:\project\kiwi-Application\kiwi\bin\Debug\kiwidbDataSet2.xss
