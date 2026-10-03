@@ -140,7 +140,7 @@
             this.button1.Location = new System.Drawing.Point(518, 159);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 35);
-            this.button1.TabIndex = 2;
+            this.button1.TabIndex = 11;
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -151,7 +151,7 @@
             this.txtBookname.Location = new System.Drawing.Point(97, 14);
             this.txtBookname.Name = "txtBookname";
             this.txtBookname.Size = new System.Drawing.Size(366, 22);
-            this.txtBookname.TabIndex = 3;
+            this.txtBookname.TabIndex = 0;
             // 
             // booksBindingSource
             // 
@@ -186,7 +186,7 @@
             this.txtlanguage.Location = new System.Drawing.Point(79, 238);
             this.txtlanguage.Name = "txtlanguage";
             this.txtlanguage.Size = new System.Drawing.Size(206, 22);
-            this.txtlanguage.TabIndex = 5;
+            this.txtlanguage.TabIndex = 6;
             // 
             // txtTranslator
             // 
@@ -194,7 +194,7 @@
             this.txtTranslator.Location = new System.Drawing.Point(88, 194);
             this.txtTranslator.Name = "txtTranslator";
             this.txtTranslator.Size = new System.Drawing.Size(254, 22);
-            this.txtTranslator.TabIndex = 4;
+            this.txtTranslator.TabIndex = 5;
             // 
             // txtcategory
             // 
@@ -202,7 +202,7 @@
             this.txtcategory.Location = new System.Drawing.Point(79, 282);
             this.txtcategory.Name = "txtcategory";
             this.txtcategory.Size = new System.Drawing.Size(206, 22);
-            this.txtcategory.TabIndex = 5;
+            this.txtcategory.TabIndex = 7;
             // 
             // label8
             // 
@@ -219,7 +219,7 @@
             this.txtAuthor.Location = new System.Drawing.Point(72, 54);
             this.txtAuthor.Name = "txtAuthor";
             this.txtAuthor.Size = new System.Drawing.Size(254, 22);
-            this.txtAuthor.TabIndex = 6;
+            this.txtAuthor.TabIndex = 1;
             // 
             // txtAgegroup
             // 
@@ -227,7 +227,7 @@
             this.txtAgegroup.Location = new System.Drawing.Point(88, 327);
             this.txtAgegroup.Name = "txtAgegroup";
             this.txtAgegroup.Size = new System.Drawing.Size(98, 22);
-            this.txtAgegroup.TabIndex = 5;
+            this.txtAgegroup.TabIndex = 8;
             // 
             // button2
             // 
@@ -236,7 +236,7 @@
             this.button2.Location = new System.Drawing.Point(434, 364);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(126, 57);
-            this.button2.TabIndex = 2;
+            this.button2.TabIndex = 9;
             this.button2.Text = "Save";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -248,7 +248,7 @@
             this.button3.Location = new System.Drawing.Point(85, 364);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(126, 57);
-            this.button3.TabIndex = 2;
+            this.button3.TabIndex = 10;
             this.button3.Text = "Cancel";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -272,7 +272,7 @@
             this.txtPublication.Location = new System.Drawing.Point(93, 87);
             this.txtPublication.Name = "txtPublication";
             this.txtPublication.Size = new System.Drawing.Size(138, 22);
-            this.txtPublication.TabIndex = 3;
+            this.txtPublication.TabIndex = 2;
             // 
             // booksTableAdapter
             // 
