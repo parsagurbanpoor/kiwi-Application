@@ -15,6 +15,8 @@ namespace kiwi
         public Users()
         {
             InitializeComponent();
+
+            usersTableAdapter.Fill(kiwidbDataSet2.Users);
         }
         
         private void btnAddUser_Click(object sender, EventArgs e)

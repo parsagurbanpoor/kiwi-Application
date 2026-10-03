@@ -16,7 +16,10 @@ namespace kiwi
         {
             InitializeComponent();
         }
-
+        public static class Global
+        {
+            public static byte Usertype;
+        }
         private void btnshow_Click(object sender, EventArgs e)
         {
 
@@ -36,6 +39,7 @@ namespace kiwi
 
         private void btnsignup_Click(object sender, EventArgs e)
         {
+            /*
             if (txtboxusername.Text=="admin" && txtboxpassword.Text=="1228")
             {
                 DashBoredpage mainForm = new DashBoredpage();
@@ -49,6 +53,30 @@ namespace kiwi
             else
             {
                 MessageBox.Show("Invalid username and password.","Error",MessageBoxButtons.OK,MessageBoxIcon.Error); 
+            }
+            */
+
+
+
+
+            Users frm = new Users();
+            var result = frm.usersTableAdapter.GetUserType(txtboxusername.Text, txtboxpassword.Text);
+
+            if (result != null)
+            {
+                Global.Usertype = Convert.ToByte(result);
+
+                MessageBox.Show("Successful login", "Successful",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                DashBoredpage mainForm = new DashBoredpage();
+
+                mainForm.Show();
+                
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("");
             }
         }
     }
