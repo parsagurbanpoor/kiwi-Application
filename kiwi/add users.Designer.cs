@@ -37,6 +37,15 @@
             this.lblage = new System.Windows.Forms.Label();
             this.lbleducation = new System.Windows.Forms.Label();
             this.lblgender = new System.Windows.Forms.Label();
+            this.txtboxRow = new System.Windows.Forms.TextBox();
+            this.txtboxFname = new System.Windows.Forms.TextBox();
+            this.txtboxLname = new System.Windows.Forms.TextBox();
+            this.txtboxUsername = new System.Windows.Forms.TextBox();
+            this.txtboxPassword = new System.Windows.Forms.TextBox();
+            this.txtboxage = new System.Windows.Forms.TextBox();
+            this.comboboxType = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboboxGender = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblrow
@@ -120,11 +129,86 @@
             this.lblgender.TabIndex = 0;
             this.lblgender.Text = "Gender:";
             // 
+            // txtboxRow
+            // 
+            this.txtboxRow.Location = new System.Drawing.Point(57, 9);
+            this.txtboxRow.Name = "txtboxRow";
+            this.txtboxRow.Size = new System.Drawing.Size(42, 22);
+            this.txtboxRow.TabIndex = 1;
+            // 
+            // txtboxFname
+            // 
+            this.txtboxFname.Location = new System.Drawing.Point(94, 47);
+            this.txtboxFname.Name = "txtboxFname";
+            this.txtboxFname.Size = new System.Drawing.Size(107, 22);
+            this.txtboxFname.TabIndex = 1;
+            // 
+            // txtboxLname
+            // 
+            this.txtboxLname.Location = new System.Drawing.Point(92, 85);
+            this.txtboxLname.Name = "txtboxLname";
+            this.txtboxLname.Size = new System.Drawing.Size(174, 22);
+            this.txtboxLname.TabIndex = 1;
+            // 
+            // txtboxUsername
+            // 
+            this.txtboxUsername.Location = new System.Drawing.Point(95, 123);
+            this.txtboxUsername.Name = "txtboxUsername";
+            this.txtboxUsername.Size = new System.Drawing.Size(104, 22);
+            this.txtboxUsername.TabIndex = 1;
+            // 
+            // txtboxPassword
+            // 
+            this.txtboxPassword.Location = new System.Drawing.Point(92, 161);
+            this.txtboxPassword.Name = "txtboxPassword";
+            this.txtboxPassword.Size = new System.Drawing.Size(175, 22);
+            this.txtboxPassword.TabIndex = 1;
+            // 
+            // txtboxage
+            // 
+            this.txtboxage.Location = new System.Drawing.Point(55, 237);
+            this.txtboxage.Name = "txtboxage";
+            this.txtboxage.Size = new System.Drawing.Size(42, 22);
+            this.txtboxage.TabIndex = 1;
+            // 
+            // comboboxType
+            // 
+            this.comboboxType.FormattingEnabled = true;
+            this.comboboxType.Location = new System.Drawing.Point(62, 199);
+            this.comboboxType.Name = "comboboxType";
+            this.comboboxType.Size = new System.Drawing.Size(121, 24);
+            this.comboboxType.TabIndex = 2;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(91, 272);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 24);
+            this.comboBox2.TabIndex = 2;
+            // 
+            // comboboxGender
+            // 
+            this.comboboxGender.FormattingEnabled = true;
+            this.comboboxGender.Location = new System.Drawing.Point(78, 313);
+            this.comboboxGender.Name = "comboboxGender";
+            this.comboboxGender.Size = new System.Drawing.Size(121, 24);
+            this.comboboxGender.TabIndex = 2;
+            // 
             // addusers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 433);
+            this.Controls.Add(this.comboboxGender);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.comboboxType);
+            this.Controls.Add(this.txtboxage);
+            this.Controls.Add(this.txtboxPassword);
+            this.Controls.Add(this.txtboxUsername);
+            this.Controls.Add(this.txtboxLname);
+            this.Controls.Add(this.txtboxFname);
+            this.Controls.Add(this.txtboxRow);
             this.Controls.Add(this.lblgender);
             this.Controls.Add(this.lbleducation);
             this.Controls.Add(this.lblage);
@@ -152,5 +236,14 @@
         private System.Windows.Forms.Label lblage;
         private System.Windows.Forms.Label lbleducation;
         private System.Windows.Forms.Label lblgender;
+        private System.Windows.Forms.TextBox txtboxRow;
+        private System.Windows.Forms.TextBox txtboxFname;
+        private System.Windows.Forms.TextBox txtboxLname;
+        private System.Windows.Forms.TextBox txtboxUsername;
+        private System.Windows.Forms.TextBox txtboxPassword;
+        private System.Windows.Forms.TextBox txtboxage;
+        private System.Windows.Forms.ComboBox comboboxType;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboboxGender;
     }
 }
