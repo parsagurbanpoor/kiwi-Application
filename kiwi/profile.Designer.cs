@@ -31,13 +31,20 @@
             this.profileBox = new System.Windows.Forms.PictureBox();
             this.lblusertitle = new System.Windows.Forms.Label();
             this.groupBoxinfo = new System.Windows.Forms.GroupBox();
-            this.lblfirstname = new System.Windows.Forms.Label();
-            this.lbllastname = new System.Windows.Forms.Label();
-            this.lblage = new System.Windows.Forms.Label();
-            this.lbltype = new System.Windows.Forms.Label();
-            this.lblgender = new System.Windows.Forms.Label();
+            this.lbltypeprofile = new System.Windows.Forms.Label();
+            this.lbleducationprofile = new System.Windows.Forms.Label();
+            this.lblGenderpeofile = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblLanme = new System.Windows.Forms.Label();
+            this.lblfname = new System.Windows.Forms.Label();
             this.lbleducation = new System.Windows.Forms.Label();
+            this.lblgender = new System.Windows.Forms.Label();
+            this.lbltype = new System.Windows.Forms.Label();
+            this.lblage = new System.Windows.Forms.Label();
+            this.lbllastname = new System.Windows.Forms.Label();
+            this.lblfirstname = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.lblAgeprofile = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.profileBox)).BeginInit();
             this.groupBoxinfo.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +71,13 @@
             // 
             // groupBoxinfo
             // 
+            this.groupBoxinfo.Controls.Add(this.lblAgeprofile);
+            this.groupBoxinfo.Controls.Add(this.lbltypeprofile);
+            this.groupBoxinfo.Controls.Add(this.lbleducationprofile);
+            this.groupBoxinfo.Controls.Add(this.lblGenderpeofile);
+            this.groupBoxinfo.Controls.Add(this.label3);
+            this.groupBoxinfo.Controls.Add(this.lblLanme);
+            this.groupBoxinfo.Controls.Add(this.lblfname);
             this.groupBoxinfo.Controls.Add(this.lbleducation);
             this.groupBoxinfo.Controls.Add(this.lblgender);
             this.groupBoxinfo.Controls.Add(this.lbltype);
@@ -77,41 +91,68 @@
             this.groupBoxinfo.TabStop = false;
             this.groupBoxinfo.Text = "information";
             // 
-            // lblfirstname
+            // lbltypeprofile
             // 
-            this.lblfirstname.AutoSize = true;
-            this.lblfirstname.Location = new System.Drawing.Point(7, 22);
-            this.lblfirstname.Name = "lblfirstname";
-            this.lblfirstname.Size = new System.Drawing.Size(70, 17);
-            this.lblfirstname.TabIndex = 0;
-            this.lblfirstname.Text = "firstname:";
+            this.lbltypeprofile.AutoSize = true;
+            this.lbltypeprofile.Location = new System.Drawing.Point(52, 100);
+            this.lbltypeprofile.Name = "lbltypeprofile";
+            this.lbltypeprofile.Size = new System.Drawing.Size(20, 17);
+            this.lbltypeprofile.TabIndex = 1;
+            this.lbltypeprofile.Text = "...";
             // 
-            // lbllastname
+            // lbleducationprofile
             // 
-            this.lbllastname.AutoSize = true;
-            this.lbllastname.Location = new System.Drawing.Point(7, 48);
-            this.lbllastname.Name = "lbllastname";
-            this.lbllastname.Size = new System.Drawing.Size(69, 17);
-            this.lbllastname.TabIndex = 0;
-            this.lbllastname.Text = "lastname:";
+            this.lbleducationprofile.AutoSize = true;
+            this.lbleducationprofile.Location = new System.Drawing.Point(81, 155);
+            this.lbleducationprofile.Name = "lbleducationprofile";
+            this.lbleducationprofile.Size = new System.Drawing.Size(20, 17);
+            this.lbleducationprofile.TabIndex = 1;
+            this.lbleducationprofile.Text = "...";
             // 
-            // lblage
+            // lblGenderpeofile
             // 
-            this.lblage.AutoSize = true;
-            this.lblage.Location = new System.Drawing.Point(6, 73);
-            this.lblage.Name = "lblage";
-            this.lblage.Size = new System.Drawing.Size(36, 17);
-            this.lblage.TabIndex = 0;
-            this.lblage.Text = "age:";
+            this.lblGenderpeofile.AutoSize = true;
+            this.lblGenderpeofile.Location = new System.Drawing.Point(69, 129);
+            this.lblGenderpeofile.Name = "lblGenderpeofile";
+            this.lblGenderpeofile.Size = new System.Drawing.Size(20, 17);
+            this.lblGenderpeofile.TabIndex = 1;
+            this.lblGenderpeofile.Text = "...";
             // 
-            // lbltype
+            // label3
             // 
-            this.lbltype.AutoSize = true;
-            this.lbltype.Location = new System.Drawing.Point(7, 100);
-            this.lbltype.Name = "lbltype";
-            this.lbltype.Size = new System.Drawing.Size(39, 17);
-            this.lbltype.TabIndex = 0;
-            this.lbltype.Text = "type:";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(52, 100);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(20, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "...";
+            // 
+            // lblLanme
+            // 
+            this.lblLanme.AutoSize = true;
+            this.lblLanme.Location = new System.Drawing.Point(82, 48);
+            this.lblLanme.Name = "lblLanme";
+            this.lblLanme.Size = new System.Drawing.Size(20, 17);
+            this.lblLanme.TabIndex = 1;
+            this.lblLanme.Text = "...";
+            // 
+            // lblfname
+            // 
+            this.lblfname.AutoSize = true;
+            this.lblfname.Location = new System.Drawing.Point(83, 22);
+            this.lblfname.Name = "lblfname";
+            this.lblfname.Size = new System.Drawing.Size(20, 17);
+            this.lblfname.TabIndex = 1;
+            this.lblfname.Text = "...";
+            // 
+            // lbleducation
+            // 
+            this.lbleducation.AutoSize = true;
+            this.lbleducation.Location = new System.Drawing.Point(6, 155);
+            this.lbleducation.Name = "lbleducation";
+            this.lbleducation.Size = new System.Drawing.Size(74, 17);
+            this.lbleducation.TabIndex = 0;
+            this.lbleducation.Text = "education:";
             // 
             // lblgender
             // 
@@ -122,14 +163,41 @@
             this.lblgender.TabIndex = 0;
             this.lblgender.Text = "gender:";
             // 
-            // lbleducation
+            // lbltype
             // 
-            this.lbleducation.AutoSize = true;
-            this.lbleducation.Location = new System.Drawing.Point(6, 155);
-            this.lbleducation.Name = "lbleducation";
-            this.lbleducation.Size = new System.Drawing.Size(74, 17);
-            this.lbleducation.TabIndex = 0;
-            this.lbleducation.Text = "education:";
+            this.lbltype.AutoSize = true;
+            this.lbltype.Location = new System.Drawing.Point(7, 100);
+            this.lbltype.Name = "lbltype";
+            this.lbltype.Size = new System.Drawing.Size(39, 17);
+            this.lbltype.TabIndex = 0;
+            this.lbltype.Text = "type:";
+            // 
+            // lblage
+            // 
+            this.lblage.AutoSize = true;
+            this.lblage.Location = new System.Drawing.Point(6, 73);
+            this.lblage.Name = "lblage";
+            this.lblage.Size = new System.Drawing.Size(36, 17);
+            this.lblage.TabIndex = 0;
+            this.lblage.Text = "age:";
+            // 
+            // lbllastname
+            // 
+            this.lbllastname.AutoSize = true;
+            this.lbllastname.Location = new System.Drawing.Point(7, 48);
+            this.lbllastname.Name = "lbllastname";
+            this.lbllastname.Size = new System.Drawing.Size(69, 17);
+            this.lbllastname.TabIndex = 0;
+            this.lbllastname.Text = "lastname:";
+            // 
+            // lblfirstname
+            // 
+            this.lblfirstname.AutoSize = true;
+            this.lblfirstname.Location = new System.Drawing.Point(7, 22);
+            this.lblfirstname.Name = "lblfirstname";
+            this.lblfirstname.Size = new System.Drawing.Size(70, 17);
+            this.lblfirstname.TabIndex = 0;
+            this.lblfirstname.Text = "firstname:";
             // 
             // btnLogout
             // 
@@ -143,6 +211,15 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // lblAgeprofile
+            // 
+            this.lblAgeprofile.AutoSize = true;
+            this.lblAgeprofile.Location = new System.Drawing.Point(52, 73);
+            this.lblAgeprofile.Name = "lblAgeprofile";
+            this.lblAgeprofile.Size = new System.Drawing.Size(20, 17);
+            this.lblAgeprofile.TabIndex = 1;
+            this.lblAgeprofile.Text = "...";
+            // 
             // profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -153,6 +230,7 @@
             this.Controls.Add(this.profileBox);
             this.Name = "profile";
             this.Size = new System.Drawing.Size(782, 553);
+            this.Load += new System.EventHandler(this.profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.profileBox)).EndInit();
             this.groupBoxinfo.ResumeLayout(false);
             this.groupBoxinfo.PerformLayout();
@@ -173,5 +251,12 @@
         private System.Windows.Forms.Label lbltype;
         private System.Windows.Forms.Label lblage;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Label lblfname;
+        private System.Windows.Forms.Label lbltypeprofile;
+        private System.Windows.Forms.Label lbleducationprofile;
+        private System.Windows.Forms.Label lblGenderpeofile;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblLanme;
+        private System.Windows.Forms.Label lblAgeprofile;
     }
 }

@@ -19,6 +19,18 @@ namespace kiwi
         public static class Global
         {
             public static byte UserType;
+
+            public static string firstname;
+
+            public static string Lastname;
+
+            public static byte Age;
+
+            public static string username;
+
+            public static string gender;
+
+            public static string edu;
         }
         private void btnshow_Click(object sender, EventArgs e)
         {
@@ -51,6 +63,24 @@ namespace kiwi
 
             if (user.Count > 0)
             {
+                //Get user First name
+                Global.firstname = Convert.ToString(user[0]["firstname"]);
+
+                //Get user Last name
+                Global.Lastname = Convert.ToString(user[0]["lastname"]);
+
+                //Get user username
+                Global.username = Convert.ToString(user[0]["username"]);
+                
+                //Get Age
+                Global.Age = Convert.ToByte(user[0]["age"]);
+
+                //Get Gender
+                Global.gender = Convert.ToString(user[0]["Gender"]);
+
+                //Get education
+
+                Global.edu = Convert.ToString(user[0]["education"]);
                 //Get user role
 
                 Global.UserType = Convert.ToByte(user[0]["Type"]);

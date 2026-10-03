@@ -28,5 +28,12 @@ namespace kiwi
             
             this.Hide();
         }
+
+        private void profile_Load(object sender, EventArgs e)
+        {
+            Users frm = new Users();
+
+            
+        }
     }
 }
