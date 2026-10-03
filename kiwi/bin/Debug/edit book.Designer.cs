@@ -70,7 +70,7 @@
             this.button1.Location = new System.Drawing.Point(518, 159);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(82, 35);
-            this.button1.TabIndex = 3;
+            this.button1.TabIndex = 11;
             this.button1.Text = "Browse";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -81,7 +81,7 @@
             this.editbookbtn.Location = new System.Drawing.Point(434, 364);
             this.editbookbtn.Name = "editbookbtn";
             this.editbookbtn.Size = new System.Drawing.Size(126, 57);
-            this.editbookbtn.TabIndex = 4;
+            this.editbookbtn.TabIndex = 9;
             this.editbookbtn.Text = "Edit";
             this.editbookbtn.UseVisualStyleBackColor = false;
             this.editbookbtn.Click += new System.EventHandler(this.editbookbtn_Click);
@@ -100,7 +100,7 @@
             this.txtBooknameedit.Location = new System.Drawing.Point(97, 14);
             this.txtBooknameedit.Name = "txtBooknameedit";
             this.txtBooknameedit.Size = new System.Drawing.Size(366, 22);
-            this.txtBooknameedit.TabIndex = 6;
+            this.txtBooknameedit.TabIndex = 0;
             // 
             // label2
             // 
@@ -116,7 +116,7 @@
             this.txtAuthoredit.Location = new System.Drawing.Point(72, 54);
             this.txtAuthoredit.Name = "txtAuthoredit";
             this.txtAuthoredit.Size = new System.Drawing.Size(254, 22);
-            this.txtAuthoredit.TabIndex = 8;
+            this.txtAuthoredit.TabIndex = 1;
             // 
             // label9
             // 
@@ -132,7 +132,7 @@
             this.txtPublicationedit.Location = new System.Drawing.Point(93, 87);
             this.txtPublicationedit.Name = "txtPublicationedit";
             this.txtPublicationedit.Size = new System.Drawing.Size(138, 22);
-            this.txtPublicationedit.TabIndex = 10;
+            this.txtPublicationedit.TabIndex = 2;
             // 
             // label7
             // 
@@ -193,35 +193,35 @@
             this.edittxtcategory.Location = new System.Drawing.Point(79, 282);
             this.edittxtcategory.Name = "edittxtcategory";
             this.edittxtcategory.Size = new System.Drawing.Size(206, 22);
-            this.edittxtcategory.TabIndex = 19;
+            this.edittxtcategory.TabIndex = 7;
             // 
             // txtLanguageedit
             // 
             this.txtLanguageedit.Location = new System.Drawing.Point(88, 238);
             this.txtLanguageedit.Name = "txtLanguageedit";
             this.txtLanguageedit.Size = new System.Drawing.Size(206, 22);
-            this.txtLanguageedit.TabIndex = 20;
+            this.txtLanguageedit.TabIndex = 6;
             // 
             // txtTranslatoredit
             // 
             this.txtTranslatoredit.Location = new System.Drawing.Point(88, 194);
             this.txtTranslatoredit.Name = "txtTranslatoredit";
             this.txtTranslatoredit.Size = new System.Drawing.Size(254, 22);
-            this.txtTranslatoredit.TabIndex = 21;
+            this.txtTranslatoredit.TabIndex = 5;
             // 
             // txtpublicationyeaaredit
             // 
             this.txtpublicationyeaaredit.Location = new System.Drawing.Point(125, 121);
             this.txtpublicationyeaaredit.Name = "txtpublicationyeaaredit";
             this.txtpublicationyeaaredit.Size = new System.Drawing.Size(61, 22);
-            this.txtpublicationyeaaredit.TabIndex = 17;
+            this.txtpublicationyeaaredit.TabIndex = 3;
             // 
             // txtISBNedit
             // 
             this.txtISBNedit.Location = new System.Drawing.Point(55, 159);
             this.txtISBNedit.Name = "txtISBNedit";
             this.txtISBNedit.Size = new System.Drawing.Size(285, 22);
-            this.txtISBNedit.TabIndex = 18;
+            this.txtISBNedit.TabIndex = 4;
             // 
             // cancelbookbtn
             // 
@@ -230,7 +230,7 @@
             this.cancelbookbtn.Location = new System.Drawing.Point(85, 364);
             this.cancelbookbtn.Name = "cancelbookbtn";
             this.cancelbookbtn.Size = new System.Drawing.Size(126, 57);
-            this.cancelbookbtn.TabIndex = 22;
+            this.cancelbookbtn.TabIndex = 10;
             this.cancelbookbtn.Text = "Cancel";
             this.cancelbookbtn.UseVisualStyleBackColor = false;
             this.cancelbookbtn.Click += new System.EventHandler(this.cancelbookbtn_Click);
@@ -240,7 +240,7 @@
             this.txtagegrupedit.Location = new System.Drawing.Point(88, 327);
             this.txtagegrupedit.Name = "txtagegrupedit";
             this.txtagegrupedit.Size = new System.Drawing.Size(98, 22);
-            this.txtagegrupedit.TabIndex = 23;
+            this.txtagegrupedit.TabIndex = 8;
             // 
             // edit_book
             // 
