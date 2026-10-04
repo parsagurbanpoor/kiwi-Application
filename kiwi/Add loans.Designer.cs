@@ -227,6 +227,7 @@
             this.comboboxdayforloans.Name = "comboboxdayforloans";
             this.comboboxdayforloans.Size = new System.Drawing.Size(63, 24);
             this.comboboxdayforloans.TabIndex = 8;
+            this.comboboxdayforloans.SelectedIndexChanged += new System.EventHandler(this.comboboxdayforloans_SelectedIndexChanged);
             // 
             // Add_loans
             // 

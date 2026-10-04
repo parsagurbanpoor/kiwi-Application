@@ -30,21 +30,7 @@ namespace kiwi
 
         private void saveloanbtn_Click(object sender, EventArgs e)
         {
-            //Get Persian calender
-            PersianCalendar pc = new PersianCalendar();
             
-            //The amount of the day selected by the user
-            int day = int.Parse(comboboxdayforloans.Text);
-
-            //Calculating the date selected by the user after the current system date and time
-            DateTime nextDate = DateTime.Now.AddDays(day);
-
-
-            //Display Date format 
-            string renewalDate =pc.GetYear(nextDate).ToString("0000") + "/" +pc.GetMonth(nextDate).ToString("00") + "/" +pc.GetDayOfMonth(nextDate).ToString("00");
-
-            //Display time to the user
-            label2.Text = renewalDate;
         }
         private void Add_loans_Load(object sender, EventArgs e)
         {
@@ -62,12 +48,34 @@ namespace kiwi
 
             //Show first element
             comboboxdayforloans.SelectedIndex = 0;
+
+
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             //Display live clock to the user
             lblcurrenttime.Text = DateTime.Now.ToString("hh:mm:ss tt");
+        }
+
+        private void comboboxdayforloans_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Get Persian calender
+            PersianCalendar pc = new PersianCalendar();
+
+            //The amount of the day selected by the user
+            int day = int.Parse(comboboxdayforloans.Text);
+
+            //Calculating the date selected by the user after the current system date and time
+            DateTime nextDate = DateTime.Now.AddDays(day);
+
+
+            //Display Date format 
+            string renewalDate = pc.GetYear(nextDate).ToString("0000") + "/" + pc.GetMonth(nextDate).ToString("00") + "/" + pc.GetDayOfMonth(nextDate).ToString("00");
+
+            //Display time to the user
+            label2.Text = renewalDate;
         }
     }
 }

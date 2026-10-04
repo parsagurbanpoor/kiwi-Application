@@ -47,13 +47,10 @@
             this.returnDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.loansBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.kiwidbDataSet4 = new kiwi.kiwidbDataSet4();
-            this.loansTableAdapter = new kiwi.kiwidbDataSet4TableAdapters.LoansTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loansBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -225,19 +222,9 @@
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // loansBindingSource
-            // 
-            this.loansBindingSource.DataMember = "Loans";
-            this.loansBindingSource.DataSource = this.kiwidbDataSet4;
-            // 
-            // kiwidbDataSet4
-            // 
-            this.kiwidbDataSet4.DataSetName = "kiwidbDataSet4";
-            this.kiwidbDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // loansTableAdapter
             // 
-            this.loansTableAdapter.ClearBeforeFill = true;
             // 
             // Loans
             // 
@@ -253,7 +240,6 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loansBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,7 +264,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn returnDateDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource loansBindingSource;
-        private kiwidbDataSet4 kiwidbDataSet4;
-        private kiwidbDataSet4TableAdapters.LoansTableAdapter loansTableAdapter;
     }
 }
