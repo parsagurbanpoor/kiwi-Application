@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cmbFilterStatus = new System.Windows.Forms.ComboBox();
             this.lblLoansearch = new System.Windows.Forms.Label();
             this.txtSearchLoan = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -36,7 +37,6 @@
             this.btnDeleteBook = new System.Windows.Forms.Button();
             this.btnExtendLoan = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
-            this.cmbFilterStatus = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
@@ -52,6 +52,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(625, 70);
             this.panel1.TabIndex = 1;
+            // 
+            // cmbFilterStatus
+            // 
+            this.cmbFilterStatus.FormattingEnabled = true;
+            this.cmbFilterStatus.Items.AddRange(new object[] {
+            "All",
+            "On Loan\t",
+            "Returned",
+            "Delayed"});
+            this.cmbFilterStatus.Location = new System.Drawing.Point(491, 25);
+            this.cmbFilterStatus.Name = "cmbFilterStatus";
+            this.cmbFilterStatus.Size = new System.Drawing.Size(121, 24);
+            this.cmbFilterStatus.TabIndex = 2;
             // 
             // lblLoansearch
             // 
@@ -129,19 +142,6 @@
             this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBooks.Size = new System.Drawing.Size(625, 390);
             this.dgvBooks.TabIndex = 4;
-            // 
-            // cmbFilterStatus
-            // 
-            this.cmbFilterStatus.FormattingEnabled = true;
-            this.cmbFilterStatus.Items.AddRange(new object[] {
-            "All",
-            "On Loan\t",
-            "Returned",
-            "Delayed"});
-            this.cmbFilterStatus.Location = new System.Drawing.Point(491, 25);
-            this.cmbFilterStatus.Name = "cmbFilterStatus";
-            this.cmbFilterStatus.Size = new System.Drawing.Size(121, 24);
-            this.cmbFilterStatus.TabIndex = 2;
             // 
             // Loans
             // 

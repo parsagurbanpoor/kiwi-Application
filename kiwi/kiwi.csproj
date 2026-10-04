@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Add loans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add loans.Designer.cs">
+      <DependentUpon>Add loans.cs</DependentUpon>
+    </Compile>
     <Compile Include="add users.cs">
       <SubType>Form</SubType>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -131,6 +137,11 @@
       <DependentUpon>kiwidbDataSet2.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="kiwidbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Loans.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -153,6 +164,9 @@
       <DependentUpon>Users.cs</DependentUpon>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
+    <EmbeddedResource Include="Add loans.resx">
+      <DependentUpon>Add loans.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="add users.resx">
       <DependentUpon>add users.cs</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -246,6 +260,17 @@
       <DependentUpon>kiwidbDataSet2.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Include="kiwidbDataSet3.xsc">
+      <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="kiwidbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kiwidbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kiwidbDataSet3.xss">
+      <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -276,7 +301,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="kiwidb.mdb">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\download.png" />
     <None Include="Resources\Gemini_Generated_Image_sugg3lsugg3lsugg.png" />

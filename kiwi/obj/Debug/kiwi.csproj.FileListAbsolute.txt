@@ -74,3 +74,4 @@ E:\project\kiwi-Application\kiwi\bin\Debug\edit user.Designer.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Form1.resx
 E:\project\kiwi-Application\kiwi\bin\Debug\Form1.cs
 E:\project\kiwi-Application\kiwi\bin\Debug\Form1.Designer.cs
+E:\project\kiwi-Application\kiwi\obj\Debug\kiwi.Add_loans.resources
