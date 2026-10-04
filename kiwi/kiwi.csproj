@@ -49,9 +49,11 @@
   <ItemGroup>
     <Compile Include="Add loans.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Add loans.Designer.cs">
       <DependentUpon>Add loans.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="add users.cs">
       <SubType>Form</SubType>
@@ -103,9 +105,11 @@
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Form_AddEditBook.cs">
       <SubType>Form</SubType>
@@ -144,12 +148,15 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Loans.cs">
       <SubType>UserControl</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Loans.Designer.cs">
       <DependentUpon>Loans.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="profile.cs">
       <SubType>UserControl</SubType>
@@ -169,6 +176,7 @@
     </Compile>
     <EmbeddedResource Include="Add loans.resx">
       <DependentUpon>Add loans.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="add users.resx">
       <DependentUpon>add users.cs</DependentUpon>
@@ -196,6 +204,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_AddEditBook.resx">
       <DependentUpon>Form_AddEditBook.cs</DependentUpon>
@@ -203,6 +212,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Loans.resx">
       <DependentUpon>Loans.cs</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="profile.resx">
       <DependentUpon>profile.cs</DependentUpon>
@@ -265,14 +275,17 @@
     </None>
     <None Include="kiwidbDataSet3.xsc">
       <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet3.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>kiwidbDataSet3.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="kiwidbDataSet3.xss">
       <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
