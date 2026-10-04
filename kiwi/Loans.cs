@@ -16,5 +16,14 @@ namespace kiwi
         {
             InitializeComponent();
         }
+
+        private void btnNewloan_Click(object sender, EventArgs e)
+        {
+            Add_loans frm = new Add_loans();
+
+            frm.Show();
+
+            this.Hide();
+        }
     }
 }

@@ -43,6 +43,9 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblcurrentdate = new System.Windows.Forms.Label();
+            this.lblcurrenttime = new System.Windows.Forms.Label();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblloanID
@@ -115,6 +118,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.lblcurrenttime);
+            this.groupBox1.Controls.Add(this.lblcurrentdate);
             this.groupBox1.Location = new System.Drawing.Point(8, 157);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(218, 131);
@@ -150,6 +155,7 @@
             this.saveloanbtn.TabIndex = 10;
             this.saveloanbtn.Text = "Save";
             this.saveloanbtn.UseVisualStyleBackColor = false;
+            this.saveloanbtn.Click += new System.EventHandler(this.saveloanbtn_Click);
             // 
             // button1
             // 
@@ -181,6 +187,24 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "....";
             // 
+            // lblcurrentdate
+            // 
+            this.lblcurrentdate.AutoSize = true;
+            this.lblcurrentdate.Location = new System.Drawing.Point(68, 31);
+            this.lblcurrentdate.Name = "lblcurrentdate";
+            this.lblcurrentdate.Size = new System.Drawing.Size(20, 17);
+            this.lblcurrentdate.TabIndex = 11;
+            this.lblcurrentdate.Text = "...";
+            // 
+            // lblcurrenttime
+            // 
+            this.lblcurrenttime.AutoSize = true;
+            this.lblcurrenttime.Location = new System.Drawing.Point(68, 91);
+            this.lblcurrenttime.Name = "lblcurrenttime";
+            this.lblcurrenttime.Size = new System.Drawing.Size(20, 17);
+            this.lblcurrenttime.TabIndex = 11;
+            this.lblcurrenttime.Text = "...";
+            // 
             // Add_loans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -204,6 +228,9 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Add_loans";
             this.Text = "Add loans";
+            this.Load += new System.EventHandler(this.Add_loans_Load);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -226,5 +253,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblcurrenttime;
+        private System.Windows.Forms.Label lblcurrentdate;
     }
 }

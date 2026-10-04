@@ -35,12 +35,9 @@
             this.txtSearchLoan = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnReturnBook = new System.Windows.Forms.Button();
-            this.btnDeleteBook = new System.Windows.Forms.Button();
+            this.btnNewloan = new System.Windows.Forms.Button();
             this.btnExtendLoan = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
-            this.kiwidbDataSet4 = new kiwi.kiwidbDataSet4();
-            this.loansBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.loansTableAdapter = new kiwi.kiwidbDataSet4TableAdapters.LoansTableAdapter();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.booknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,11 +46,14 @@
             this.dueDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loansBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.kiwidbDataSet4 = new kiwi.kiwidbDataSet4();
+            this.loansTableAdapter = new kiwi.kiwidbDataSet4TableAdapters.LoansTableAdapter();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loansBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,7 +99,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnReturnBook);
-            this.panel2.Controls.Add(this.btnDeleteBook);
+            this.panel2.Controls.Add(this.btnNewloan);
             this.panel2.Controls.Add(this.btnExtendLoan);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 460);
@@ -119,17 +119,18 @@
             this.btnReturnBook.Text = "ReturnBook";
             this.btnReturnBook.UseVisualStyleBackColor = false;
             // 
-            // btnDeleteBook
+            // btnNewloan
             // 
-            this.btnDeleteBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
-            this.btnDeleteBook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeleteBook.ForeColor = System.Drawing.Color.White;
-            this.btnDeleteBook.Location = new System.Drawing.Point(372, 14);
-            this.btnDeleteBook.Name = "btnDeleteBook";
-            this.btnDeleteBook.Size = new System.Drawing.Size(94, 32);
-            this.btnDeleteBook.TabIndex = 2;
-            this.btnDeleteBook.Text = "New Loan";
-            this.btnDeleteBook.UseVisualStyleBackColor = false;
+            this.btnNewloan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(128)))), ((int)(((byte)(185)))));
+            this.btnNewloan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNewloan.ForeColor = System.Drawing.Color.White;
+            this.btnNewloan.Location = new System.Drawing.Point(372, 14);
+            this.btnNewloan.Name = "btnNewloan";
+            this.btnNewloan.Size = new System.Drawing.Size(94, 32);
+            this.btnNewloan.TabIndex = 2;
+            this.btnNewloan.Text = "New Loan";
+            this.btnNewloan.UseVisualStyleBackColor = false;
+            this.btnNewloan.Click += new System.EventHandler(this.btnNewloan_Click);
             // 
             // btnExtendLoan
             // 
@@ -167,20 +168,6 @@
             this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBooks.Size = new System.Drawing.Size(625, 390);
             this.dgvBooks.TabIndex = 4;
-            // 
-            // kiwidbDataSet4
-            // 
-            this.kiwidbDataSet4.DataSetName = "kiwidbDataSet4";
-            this.kiwidbDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // loansBindingSource
-            // 
-            this.loansBindingSource.DataMember = "Loans";
-            this.loansBindingSource.DataSource = this.kiwidbDataSet4;
-            // 
-            // loansTableAdapter
-            // 
-            this.loansTableAdapter.ClearBeforeFill = true;
             // 
             // iDDataGridViewTextBoxColumn
             // 
@@ -238,6 +225,20 @@
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // loansBindingSource
+            // 
+            this.loansBindingSource.DataMember = "Loans";
+            this.loansBindingSource.DataSource = this.kiwidbDataSet4;
+            // 
+            // kiwidbDataSet4
+            // 
+            this.kiwidbDataSet4.DataSetName = "kiwidbDataSet4";
+            this.kiwidbDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // loansTableAdapter
+            // 
+            this.loansTableAdapter.ClearBeforeFill = true;
+            // 
             // Loans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -251,8 +252,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loansBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -264,7 +265,7 @@
         private System.Windows.Forms.TextBox txtSearchLoan;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnReturnBook;
-        private System.Windows.Forms.Button btnDeleteBook;
+        private System.Windows.Forms.Button btnNewloan;
         private System.Windows.Forms.Button btnExtendLoan;
         private System.Windows.Forms.DataGridView dgvBooks;
         private System.Windows.Forms.ComboBox cmbFilterStatus;

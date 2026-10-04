@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace kiwi
 {
@@ -25,6 +26,24 @@ namespace kiwi
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void saveloanbtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Add_loans_Load(object sender, EventArgs e)
+        {
+            //Get Persian calender
+            PersianCalendar pc = new PersianCalendar();
+            
+            //obj crunnet Date
+            DateTime now = DateTime.Now;
+
+            string today = pc.GetYear(now).ToString("0000") + "/" + pc.GetMonth(now).ToString("00") + "/" + pc.GetDayOfMonth(now).ToString("00");
+
+            MessageBox.Show(today);
         }
     }
 }
