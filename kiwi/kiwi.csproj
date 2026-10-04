@@ -131,6 +131,9 @@
       <DependentUpon>kiwidbDataSet1.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="kiwidbDataSet2.cs">
+      <DependentUpon>kiwidbDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="kiwidbDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

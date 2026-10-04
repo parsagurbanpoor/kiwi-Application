@@ -50,7 +50,9 @@ namespace kiwi
             comboboxdayforloans.SelectedIndex = 0;
 
 
+            Users frm = new Users();
 
+            frm.usersTableAdapter.GetUsersForLoan();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
