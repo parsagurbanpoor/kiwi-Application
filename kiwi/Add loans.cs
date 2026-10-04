@@ -32,7 +32,6 @@ namespace kiwi
         {
 
         }
-
         private void Add_loans_Load(object sender, EventArgs e)
         {
             //Get Persian calender
@@ -43,7 +42,15 @@ namespace kiwi
 
             string today = pc.GetYear(now).ToString("0000") + "/" + pc.GetMonth(now).ToString("00") + "/" + pc.GetDayOfMonth(now).ToString("00");
 
-            MessageBox.Show(today);
+            //Displaying the Jalali date to the user
+            lblcurrentdate.Text = today;
+            label1.Text = today;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            //Display live clock to the user
+            lblcurrenttime.Text = DateTime.Now.ToString("hh:mm:ss tt");
         }
     }
 }

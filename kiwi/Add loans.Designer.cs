@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblloanID = new System.Windows.Forms.Label();
             this.lblloanbookname = new System.Windows.Forms.Label();
             this.lblloanusername = new System.Windows.Forms.Label();
@@ -37,14 +38,15 @@
             this.lblISBN = new System.Windows.Forms.Label();
             this.comboboxusernameloan = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblcurrenttime = new System.Windows.Forms.Label();
+            this.lblcurrentdate = new System.Windows.Forms.Label();
             this.lbldateofdeposit = new System.Windows.Forms.Label();
             this.lblreturn = new System.Windows.Forms.Label();
             this.saveloanbtn = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblcurrentdate = new System.Windows.Forms.Label();
-            this.lblcurrenttime = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,6 +129,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Current date and time";
             // 
+            // lblcurrenttime
+            // 
+            this.lblcurrenttime.AutoSize = true;
+            this.lblcurrenttime.Location = new System.Drawing.Point(68, 91);
+            this.lblcurrenttime.Name = "lblcurrenttime";
+            this.lblcurrenttime.Size = new System.Drawing.Size(20, 17);
+            this.lblcurrenttime.TabIndex = 11;
+            this.lblcurrenttime.Text = "...";
+            // 
+            // lblcurrentdate
+            // 
+            this.lblcurrentdate.AutoSize = true;
+            this.lblcurrentdate.Location = new System.Drawing.Point(68, 31);
+            this.lblcurrentdate.Name = "lblcurrentdate";
+            this.lblcurrentdate.Size = new System.Drawing.Size(20, 17);
+            this.lblcurrentdate.TabIndex = 11;
+            this.lblcurrentdate.Text = "...";
+            // 
             // lbldateofdeposit
             // 
             this.lbldateofdeposit.AutoSize = true;
@@ -187,23 +207,11 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "....";
             // 
-            // lblcurrentdate
+            // timer1
             // 
-            this.lblcurrentdate.AutoSize = true;
-            this.lblcurrentdate.Location = new System.Drawing.Point(68, 31);
-            this.lblcurrentdate.Name = "lblcurrentdate";
-            this.lblcurrentdate.Size = new System.Drawing.Size(20, 17);
-            this.lblcurrentdate.TabIndex = 11;
-            this.lblcurrentdate.Text = "...";
-            // 
-            // lblcurrenttime
-            // 
-            this.lblcurrenttime.AutoSize = true;
-            this.lblcurrenttime.Location = new System.Drawing.Point(68, 91);
-            this.lblcurrenttime.Name = "lblcurrenttime";
-            this.lblcurrenttime.Size = new System.Drawing.Size(20, 17);
-            this.lblcurrenttime.TabIndex = 11;
-            this.lblcurrenttime.Text = "...";
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Add_loans
             // 
@@ -255,5 +263,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblcurrenttime;
         private System.Windows.Forms.Label lblcurrentdate;
+        private System.Windows.Forms.Timer timer1;
     }
 }
