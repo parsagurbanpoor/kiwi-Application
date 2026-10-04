@@ -47,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.comboboxdayforloans = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -213,6 +214,20 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // comboboxdayforloans
+            // 
+            this.comboboxdayforloans.FormattingEnabled = true;
+            this.comboboxdayforloans.Items.AddRange(new object[] {
+            "7",
+            "10",
+            "15",
+            "20",
+            "30"});
+            this.comboboxdayforloans.Location = new System.Drawing.Point(447, 206);
+            this.comboboxdayforloans.Name = "comboboxdayforloans";
+            this.comboboxdayforloans.Size = new System.Drawing.Size(63, 24);
+            this.comboboxdayforloans.TabIndex = 8;
+            // 
             // Add_loans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -222,6 +237,7 @@
             this.Controls.Add(this.saveloanbtn);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.comboboxusernameloan);
+            this.Controls.Add(this.comboboxdayforloans);
             this.Controls.Add(this.comboboxloanbookname);
             this.Controls.Add(this.txtboxloanID);
             this.Controls.Add(this.lblloanusername);
@@ -264,5 +280,6 @@
         private System.Windows.Forms.Label lblcurrenttime;
         private System.Windows.Forms.Label lblcurrentdate;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox comboboxdayforloans;
     }
 }
