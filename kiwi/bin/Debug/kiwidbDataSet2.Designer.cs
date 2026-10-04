@@ -1214,7 +1214,7 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "SELECT firstname, lastname, username, type\r\nFROM     Users";
+            this._commandCollection[3].CommandText = "SELECT firstname, lastname, username, type\r\nFROM     Users\r\nWHERE  (type = 1)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[4].Connection = this.Connection;

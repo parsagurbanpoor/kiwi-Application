@@ -53,15 +53,35 @@ namespace kiwi
             //Access to user page
             Users frm = new Users();
             //Inserting information into a combo box
-            comboboxusernameloan.DataSource = frm.usersTableAdapter.GetUsersForLoan();
+            var users = frm.usersTableAdapter.GetUsersForLoan();
 
-            comboboxusernameloan.DisplayMember = "username";
+            if (users.Count == 0)
+            {
+                MessageBox.Show("There is no user for loan registration", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                Close();
+            }
+            else
+            {
+                comboboxusernameloan.DataSource = users;
+                comboboxusernameloan.DisplayMember = "username";
+            }
+
+            //Access to book page
             Form_AddEditBook frmm = new Form_AddEditBook();
 
             //Inserting information into a combo box
-            comboboxloanbookname.DataSource= frmm.booksTableAdapter.GetBooksForLoan();
-            comboboxloanbookname.DisplayMember = "BookName";
+            var books = frmm.booksTableAdapter.GetBooksForLoan();
 
+            if (books.Count == 0)
+            {
+                MessageBox.Show("There are no books available for loan.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Close();
+            }
+            else
+            {
+                comboboxloanbookname.DataSource = books;
+                comboboxloanbookname.DisplayMember = "BookName";
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
