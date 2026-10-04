@@ -346,8 +346,8 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtPublication;
-        private kiwidbDataSet kiwidbDataSet;
-        private System.Windows.Forms.BindingSource booksBindingSource;
-        private kiwidbDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
+        public kiwidbDataSet kiwidbDataSet;
+        public System.Windows.Forms.BindingSource booksBindingSource;
+        public kiwidbDataSetTableAdapters.BooksTableAdapter booksTableAdapter;
     }
 }

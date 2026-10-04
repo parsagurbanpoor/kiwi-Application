@@ -40,6 +40,7 @@ namespace kiwi
             //obj crunnet Date
             DateTime now = DateTime.Now;
 
+            //Accounting and how to display the date to the user
             string today = pc.GetYear(now).ToString("0000") + "/" + pc.GetMonth(now).ToString("00") + "/" + pc.GetDayOfMonth(now).ToString("00");
 
             //Displaying the Jalali date to the user
@@ -49,10 +50,18 @@ namespace kiwi
             //Show first element
             comboboxdayforloans.SelectedIndex = 0;
 
-
+            //Access to user page
             Users frm = new Users();
+            //Inserting information into a combo box
+            comboboxusernameloan.DataSource = frm.usersTableAdapter.GetUsersForLoan();
 
-            frm.usersTableAdapter.GetUsersForLoan();
+            comboboxusernameloan.DisplayMember = "username";
+            Form_AddEditBook frmm = new Form_AddEditBook();
+
+            //Inserting information into a combo box
+            comboboxloanbookname.DataSource= frmm.booksTableAdapter.GetBooksForLoan();
+            comboboxloanbookname.DisplayMember = "BookName";
+
         }
 
         private void timer1_Tick(object sender, EventArgs e)

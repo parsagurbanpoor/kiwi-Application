@@ -122,6 +122,15 @@
               <Mapping SourceColumn="Author" DataSetColumn="Author" />
             </Mappings>
             <Sources>
+              <DbSource ConnectionRef="kiwidbConnectionString (Settings)" DbObjectName="Books" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetBooksForLoan" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetBooksForLoan" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetBooksForLoan" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT bookname, ISBN
+FROM     Books</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
               <DbSource ConnectionRef="kiwidbConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="insertbook" Modifier="Public" Name="insertbook" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="insertbook">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
@@ -186,7 +195,7 @@ WHERE [row] = ?</CommandText>
   <xs:element name="kiwidbDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="kiwidbDataSet" msprop:Generator_UserDSName="kiwidbDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Books" msprop:Generator_TableClassName="BooksDataTable" msprop:Generator_TableVarName="tableBooks" msprop:Generator_TablePropName="Books" msprop:Generator_RowDeletingName="BooksRowDeleting" msprop:Generator_RowChangingName="BooksRowChanging" msprop:Generator_RowEvHandlerName="BooksRowChangeEventHandler" msprop:Generator_RowDeletedName="BooksRowDeleted" msprop:Generator_UserTableName="Books" msprop:Generator_RowChangedName="BooksRowChanged" msprop:Generator_RowEvArgName="BooksRowChangeEvent" msprop:Generator_RowClassName="BooksRow">
+        <xs:element name="Books" msprop:Generator_TableClassName="BooksDataTable" msprop:Generator_TableVarName="tableBooks" msprop:Generator_RowChangedName="BooksRowChanged" msprop:Generator_TablePropName="Books" msprop:Generator_RowDeletingName="BooksRowDeleting" msprop:Generator_RowChangingName="BooksRowChanging" msprop:Generator_RowEvHandlerName="BooksRowChangeEventHandler" msprop:Generator_RowDeletedName="BooksRowDeleted" msprop:Generator_RowClassName="BooksRow" msprop:Generator_UserTableName="Books" msprop:Generator_RowEvArgName="BooksRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="row" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnrow" msprop:Generator_ColumnPropNameInRow="row" msprop:Generator_ColumnPropNameInTable="rowColumn" msprop:Generator_UserColumnName="row" type="xs:int" />

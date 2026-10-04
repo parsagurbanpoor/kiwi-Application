@@ -1195,7 +1195,7 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[5];
+            this._commandCollection = new global::System.Data.OleDb.OleDbCommand[6];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT *\r\nFROM Users\r\nWHERE Username = ? AND Password = ?";
@@ -1214,23 +1214,12 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "INSERT INTO Users\r\n                  (firstname, lastname, username, [password], " +
-                "type, profilepic, age, education, Gender)\r\nVALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._commandCollection[3].CommandText = "SELECT firstname, lastname, username, type\r\nFROM     Users";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("firstname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "firstname", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("lastname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "lastname", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("username", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "username", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("password", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("type", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "type", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("profilepic", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "profilepic", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("age", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "age", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("education", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "education", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Gender", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gender", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[4] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[4].Connection = this.Connection;
-            this._commandCollection[4].CommandText = "UPDATE Users\r\nSET          firstname = ?, lastname = ?, username = ?, [password] " +
-                "= ?, type = ?, profilepic = ?, age = ?, education = ?, Gender = ?\r\nWHERE  (row =" +
-                " ?)";
+            this._commandCollection[4].CommandText = "INSERT INTO Users\r\n                  (firstname, lastname, username, [password], " +
+                "type, profilepic, age, education, Gender)\r\nVALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("firstname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "firstname", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("lastname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "lastname", global::System.Data.DataRowVersion.Current, false, null));
@@ -1241,7 +1230,22 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
             this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("age", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "age", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("education", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "education", global::System.Data.DataRowVersion.Current, false, null));
             this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Gender", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gender", global::System.Data.DataRowVersion.Current, false, null));
-            this._commandCollection[4].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_row", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "row", global::System.Data.DataRowVersion.Original, false, null));
+            this._commandCollection[5] = new global::System.Data.OleDb.OleDbCommand();
+            this._commandCollection[5].Connection = this.Connection;
+            this._commandCollection[5].CommandText = "UPDATE Users\r\nSET          firstname = ?, lastname = ?, username = ?, [password] " +
+                "= ?, type = ?, profilepic = ?, age = ?, education = ?, Gender = ?\r\nWHERE  (row =" +
+                " ?)";
+            this._commandCollection[5].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("firstname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "firstname", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("lastname", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "lastname", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("username", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "username", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("password", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "password", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("type", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "type", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("profilepic", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "profilepic", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("age", global::System.Data.OleDb.OleDbType.UnsignedTinyInt, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "age", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("education", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "education", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Gender", global::System.Data.OleDb.OleDbType.WChar, 255, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Gender", global::System.Data.DataRowVersion.Current, false, null));
+            this._commandCollection[5].Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_row", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "row", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1311,6 +1315,30 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
         public virtual kiwidbDataSet2.UsersDataTable GetDataBy1() {
             this.Adapter.SelectCommand = this.CommandCollection[2];
+            kiwidbDataSet2.UsersDataTable dataTable = new kiwidbDataSet2.UsersDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy1(kiwidbDataSet2.UsersDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual kiwidbDataSet2.UsersDataTable GetUsersForLoan() {
+            this.Adapter.SelectCommand = this.CommandCollection[3];
             kiwidbDataSet2.UsersDataTable dataTable = new kiwidbDataSet2.UsersDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -1710,7 +1738,7 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
         public virtual int InsertUser(string firstname, string lastname, string username, string password, global::System.Nullable<byte> type, string profilepic, global::System.Nullable<byte> age, string education, string Gender) {
-            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[3];
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[4];
             if ((firstname == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
@@ -1787,7 +1815,7 @@ namespace kiwi.kiwidbDataSet2TableAdapters {
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int UpdateUser(string firstname, string lastname, string username, string password, global::System.Nullable<byte> type, string profilepic, global::System.Nullable<byte> age, string education, string Gender, int Original_row) {
-            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[4];
+            global::System.Data.OleDb.OleDbCommand command = this.CommandCollection[5];
             if ((firstname == null)) {
                 command.Parameters[0].Value = global::System.DBNull.Value;
             }
