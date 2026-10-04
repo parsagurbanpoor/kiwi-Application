@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cmbFilterStatus = new System.Windows.Forms.ComboBox();
             this.lblLoansearch = new System.Windows.Forms.Label();
@@ -37,9 +38,22 @@
             this.btnDeleteBook = new System.Windows.Forms.Button();
             this.btnExtendLoan = new System.Windows.Forms.Button();
             this.dgvBooks = new System.Windows.Forms.DataGridView();
+            this.kiwidbDataSet4 = new kiwi.kiwidbDataSet4();
+            this.loansBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.loansTableAdapter = new kiwi.kiwidbDataSet4TableAdapters.LoansTableAdapter();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.booknameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usernameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iSBNDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loanDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dueDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loansBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -131,8 +145,19 @@
             // 
             // dgvBooks
             // 
+            this.dgvBooks.AutoGenerateColumns = false;
             this.dgvBooks.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvBooks.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBooks.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.booknameDataGridViewTextBoxColumn,
+            this.usernameDataGridViewTextBoxColumn,
+            this.iSBNDataGridViewTextBoxColumn,
+            this.loanDateDataGridViewTextBoxColumn,
+            this.dueDateDataGridViewTextBoxColumn,
+            this.returnDateDataGridViewTextBoxColumn,
+            this.statusDataGridViewTextBoxColumn});
+            this.dgvBooks.DataSource = this.loansBindingSource;
             this.dgvBooks.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvBooks.Location = new System.Drawing.Point(0, 70);
             this.dgvBooks.MultiSelect = false;
@@ -142,6 +167,76 @@
             this.dgvBooks.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBooks.Size = new System.Drawing.Size(625, 390);
             this.dgvBooks.TabIndex = 4;
+            // 
+            // kiwidbDataSet4
+            // 
+            this.kiwidbDataSet4.DataSetName = "kiwidbDataSet4";
+            this.kiwidbDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // loansBindingSource
+            // 
+            this.loansBindingSource.DataMember = "Loans";
+            this.loansBindingSource.DataSource = this.kiwidbDataSet4;
+            // 
+            // loansTableAdapter
+            // 
+            this.loansTableAdapter.ClearBeforeFill = true;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // booknameDataGridViewTextBoxColumn
+            // 
+            this.booknameDataGridViewTextBoxColumn.DataPropertyName = "bookname";
+            this.booknameDataGridViewTextBoxColumn.HeaderText = "bookname";
+            this.booknameDataGridViewTextBoxColumn.Name = "booknameDataGridViewTextBoxColumn";
+            this.booknameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // usernameDataGridViewTextBoxColumn
+            // 
+            this.usernameDataGridViewTextBoxColumn.DataPropertyName = "username";
+            this.usernameDataGridViewTextBoxColumn.HeaderText = "username";
+            this.usernameDataGridViewTextBoxColumn.Name = "usernameDataGridViewTextBoxColumn";
+            this.usernameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // iSBNDataGridViewTextBoxColumn
+            // 
+            this.iSBNDataGridViewTextBoxColumn.DataPropertyName = "ISBN";
+            this.iSBNDataGridViewTextBoxColumn.HeaderText = "ISBN";
+            this.iSBNDataGridViewTextBoxColumn.Name = "iSBNDataGridViewTextBoxColumn";
+            this.iSBNDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // loanDateDataGridViewTextBoxColumn
+            // 
+            this.loanDateDataGridViewTextBoxColumn.DataPropertyName = "LoanDate";
+            this.loanDateDataGridViewTextBoxColumn.HeaderText = "LoanDate";
+            this.loanDateDataGridViewTextBoxColumn.Name = "loanDateDataGridViewTextBoxColumn";
+            this.loanDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dueDateDataGridViewTextBoxColumn
+            // 
+            this.dueDateDataGridViewTextBoxColumn.DataPropertyName = "DueDate";
+            this.dueDateDataGridViewTextBoxColumn.HeaderText = "DueDate";
+            this.dueDateDataGridViewTextBoxColumn.Name = "dueDateDataGridViewTextBoxColumn";
+            this.dueDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // returnDateDataGridViewTextBoxColumn
+            // 
+            this.returnDateDataGridViewTextBoxColumn.DataPropertyName = "ReturnDate";
+            this.returnDateDataGridViewTextBoxColumn.HeaderText = "ReturnDate";
+            this.returnDateDataGridViewTextBoxColumn.Name = "returnDateDataGridViewTextBoxColumn";
+            this.returnDateDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // statusDataGridViewTextBoxColumn
+            // 
+            this.statusDataGridViewTextBoxColumn.DataPropertyName = "Status";
+            this.statusDataGridViewTextBoxColumn.HeaderText = "Status";
+            this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
+            this.statusDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Loans
             // 
@@ -156,6 +251,8 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBooks)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.kiwidbDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loansBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -171,5 +268,16 @@
         private System.Windows.Forms.Button btnExtendLoan;
         private System.Windows.Forms.DataGridView dgvBooks;
         private System.Windows.Forms.ComboBox cmbFilterStatus;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn booknameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn usernameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iSBNDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loanDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dueDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn returnDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn statusDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource loansBindingSource;
+        private kiwidbDataSet4 kiwidbDataSet4;
+        private kiwidbDataSet4TableAdapters.LoansTableAdapter loansTableAdapter;
     }
 }

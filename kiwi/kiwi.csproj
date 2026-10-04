@@ -142,6 +142,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="kiwidbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>kiwidbDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Loans.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -270,6 +275,17 @@
     </None>
     <None Include="kiwidbDataSet3.xss">
       <DependentUpon>kiwidbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="kiwidbDataSet4.xsc">
+      <DependentUpon>kiwidbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="kiwidbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>kiwidbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="kiwidbDataSet4.xss">
+      <DependentUpon>kiwidbDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
