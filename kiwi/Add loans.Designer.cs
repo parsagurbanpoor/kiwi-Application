@@ -28,88 +28,90 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.lblloanID = new System.Windows.Forms.Label();
+            this.lblloanbookname = new System.Windows.Forms.Label();
+            this.lblloanusername = new System.Windows.Forms.Label();
+            this.lblISBNloan = new System.Windows.Forms.Label();
+            this.txtboxloanID = new System.Windows.Forms.TextBox();
+            this.comboboxloanbookname = new System.Windows.Forms.ComboBox();
+            this.lblISBN = new System.Windows.Forms.Label();
+            this.comboboxusernameloan = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbldateofdeposit = new System.Windows.Forms.Label();
+            this.lblreturn = new System.Windows.Forms.Label();
+            this.saveloanbtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.editbookbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblloanID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 17);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Loans ID:";
+            this.lblloanID.AutoSize = true;
+            this.lblloanID.Location = new System.Drawing.Point(5, 9);
+            this.lblloanID.Name = "lblloanID";
+            this.lblloanID.Size = new System.Drawing.Size(68, 17);
+            this.lblloanID.TabIndex = 6;
+            this.lblloanID.Text = "Loans ID:";
             // 
-            // label2
+            // lblloanbookname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 17);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Bookname:";
+            this.lblloanbookname.AutoSize = true;
+            this.lblloanbookname.Location = new System.Drawing.Point(3, 41);
+            this.lblloanbookname.Name = "lblloanbookname";
+            this.lblloanbookname.Size = new System.Drawing.Size(79, 17);
+            this.lblloanbookname.TabIndex = 6;
+            this.lblloanbookname.Text = "Bookname:";
             // 
-            // label4
+            // lblloanusername
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Username:";
+            this.lblloanusername.AutoSize = true;
+            this.lblloanusername.Location = new System.Drawing.Point(5, 100);
+            this.lblloanusername.Name = "lblloanusername";
+            this.lblloanusername.Size = new System.Drawing.Size(77, 17);
+            this.lblloanusername.TabIndex = 6;
+            this.lblloanusername.Text = "Username:";
             // 
-            // label5
+            // lblISBNloan
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(415, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 17);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "ISBN:";
+            this.lblISBNloan.AutoSize = true;
+            this.lblISBNloan.Location = new System.Drawing.Point(415, 44);
+            this.lblISBNloan.Name = "lblISBNloan";
+            this.lblISBNloan.Size = new System.Drawing.Size(43, 17);
+            this.lblISBNloan.TabIndex = 6;
+            this.lblISBNloan.Text = "ISBN:";
             // 
-            // textBox1
+            // txtboxloanID
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 6);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(40, 22);
-            this.textBox1.TabIndex = 7;
+            this.txtboxloanID.Location = new System.Drawing.Point(79, 6);
+            this.txtboxloanID.Name = "txtboxloanID";
+            this.txtboxloanID.Size = new System.Drawing.Size(40, 22);
+            this.txtboxloanID.TabIndex = 7;
             // 
-            // comboBox1
+            // comboboxloanbookname
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(88, 41);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(321, 24);
-            this.comboBox1.TabIndex = 8;
+            this.comboboxloanbookname.FormattingEnabled = true;
+            this.comboboxloanbookname.Location = new System.Drawing.Point(88, 41);
+            this.comboboxloanbookname.Name = "comboboxloanbookname";
+            this.comboboxloanbookname.Size = new System.Drawing.Size(321, 24);
+            this.comboboxloanbookname.TabIndex = 8;
             // 
-            // label3
+            // lblISBN
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(464, 44);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(24, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "....";
+            this.lblISBN.AutoSize = true;
+            this.lblISBN.Location = new System.Drawing.Point(464, 44);
+            this.lblISBN.Name = "lblISBN";
+            this.lblISBN.Size = new System.Drawing.Size(24, 17);
+            this.lblISBN.TabIndex = 6;
+            this.lblISBN.Text = "....";
             // 
-            // comboBox2
+            // comboboxusernameloan
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(88, 97);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(321, 24);
-            this.comboBox2.TabIndex = 8;
+            this.comboboxusernameloan.FormattingEnabled = true;
+            this.comboboxusernameloan.Location = new System.Drawing.Point(88, 97);
+            this.comboboxusernameloan.Name = "comboboxusernameloan";
+            this.comboboxusernameloan.Size = new System.Drawing.Size(321, 24);
+            this.comboboxusernameloan.TabIndex = 8;
             // 
             // groupBox1
             // 
@@ -120,34 +122,34 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Current date and time";
             // 
-            // label6
+            // lbldateofdeposit
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(232, 157);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 17);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "تاریخ امانت:";
+            this.lbldateofdeposit.AutoSize = true;
+            this.lbldateofdeposit.Location = new System.Drawing.Point(232, 157);
+            this.lbldateofdeposit.Name = "lbldateofdeposit";
+            this.lbldateofdeposit.Size = new System.Drawing.Size(108, 17);
+            this.lbldateofdeposit.TabIndex = 6;
+            this.lbldateofdeposit.Text = "Date of deposit:";
             // 
-            // label7
+            // lblreturn
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(232, 209);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "مهلت بازگشت:";
+            this.lblreturn.AutoSize = true;
+            this.lblreturn.Location = new System.Drawing.Point(232, 209);
+            this.lblreturn.Name = "lblreturn";
+            this.lblreturn.Size = new System.Drawing.Size(99, 17);
+            this.lblreturn.TabIndex = 6;
+            this.lblreturn.Text = "Return period:";
             // 
-            // editbookbtn
+            // saveloanbtn
             // 
-            this.editbookbtn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.editbookbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.editbookbtn.Location = new System.Drawing.Point(427, 294);
-            this.editbookbtn.Name = "editbookbtn";
-            this.editbookbtn.Size = new System.Drawing.Size(126, 57);
-            this.editbookbtn.TabIndex = 10;
-            this.editbookbtn.Text = "Save";
-            this.editbookbtn.UseVisualStyleBackColor = false;
+            this.saveloanbtn.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.saveloanbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveloanbtn.Location = new System.Drawing.Point(427, 294);
+            this.saveloanbtn.Name = "saveloanbtn";
+            this.saveloanbtn.Size = new System.Drawing.Size(126, 57);
+            this.saveloanbtn.TabIndex = 10;
+            this.saveloanbtn.Text = "Save";
+            this.saveloanbtn.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
@@ -159,6 +161,25 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Cancel";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(346, 157);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(24, 17);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "....";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(346, 209);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(24, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "....";
             // 
             // Add_loans
             // 
@@ -166,18 +187,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(565, 363);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.editbookbtn);
+            this.Controls.Add(this.saveloanbtn);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboboxusernameloan);
+            this.Controls.Add(this.comboboxloanbookname);
+            this.Controls.Add(this.txtboxloanID);
+            this.Controls.Add(this.lblloanusername);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblISBN);
+            this.Controls.Add(this.lblISBNloan);
+            this.Controls.Add(this.lblreturn);
+            this.Controls.Add(this.lbldateofdeposit);
+            this.Controls.Add(this.lblloanbookname);
+            this.Controls.Add(this.lblloanID);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Add_loans";
             this.Text = "Add loans";
@@ -188,18 +211,20 @@
 
         #endregion
 
+        private System.Windows.Forms.Label lblloanID;
+        private System.Windows.Forms.Label lblloanbookname;
+        private System.Windows.Forms.Label lblloanusername;
+        private System.Windows.Forms.Label lblISBNloan;
+        private System.Windows.Forms.TextBox txtboxloanID;
+        private System.Windows.Forms.ComboBox comboboxloanbookname;
+        private System.Windows.Forms.Label lblISBN;
+        private System.Windows.Forms.ComboBox comboboxusernameloan;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label lbldateofdeposit;
+        private System.Windows.Forms.Label lblreturn;
+        private System.Windows.Forms.Button saveloanbtn;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button editbookbtn;
-        private System.Windows.Forms.Button button1;
     }
 }
